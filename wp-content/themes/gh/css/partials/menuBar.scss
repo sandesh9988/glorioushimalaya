@@ -6,7 +6,7 @@ $menubar-transition: 0.4s ease;
     width: 36px;
     height: 26px;
     transition: $menubar-transition;
-
+     display: none;
     .nav__visible & {
         transform: rotate(-180deg);
     }
