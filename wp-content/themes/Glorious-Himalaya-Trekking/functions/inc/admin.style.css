@@ -1,0 +1,49 @@
+td.entry-view-field-name {
+    font-weight: bold;
+    background-color: #EAF2FA;
+    border-bottom: 1px solid #FFF;
+    line-height: 1.5;
+    padding: 7px;
+    min-height: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+td.entry-view-field-value {
+    border-bottom: 1px solid #DFDFDF;
+    padding: 7px 7px 7px 40px;
+    line-height: 1.5;
+    min-height: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.form-entry-table{
+    width:65%;
+    overflow:hidden;
+    float:left;
+    clear:inherit;
+}
+.entry-sidebar {
+    width: 27%;
+    float: right;
+    padding: 15px;
+    background-color: #fff;
+    margin-right: 3%;
+}
+.pull-right{
+    float:right;
+}
+
+.btn-admin-back {
+    padding: 5px 20px;
+    background-color: #4C9ED9;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.btn-admin-back:hover{
+    background-color: #262626;
+    color:#fff;
+}

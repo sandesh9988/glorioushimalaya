@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+ <meta charset="<?php bloginfo( 'charset' ); ?>">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+ <link rel="stylesheet" type="text/css" href="https://fonts.google.com/?query=proxima+nova">
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+ <!--GOOGLe MAP -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnlsCd2KagXuMQ806kvkkT-qgAcDV0Uvk
+&callback=initMap"
+  type="text/javascript"></script>
+  
+ <?php wp_head(); ?>
+
+ <!--COVERFLOW CAROUSEL CSS-->
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <link href="<?php bloginfo('template_url'); ?>/css/jquery.flipster.min.css'); ?>" rel="stylesheet"/>
+
+
+ <!--COVERFLOW CAROUSEL JQUERY-->
+ <script src="<?php bloginfo('template_url'); ?>/js/jquery.flipster.min.js'); ?>"></script>
+
+ <!--BACK TO TOP-->
+ <script>            
+  jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.move-to-top').fadeIn(duration);
+      } else {
+        jQuery('.move-to-top').fadeOut(duration);
+      }
+    });
+    
+    jQuery('.move-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+  });
+</script>
+
+<!--GOOGLE MAP-->
+<script>
+  function myGooglemap() {
+    var mapCanvas = document.getElementById('google-map');
+    var mapOptions = {
+      center: new google.maps.LatLng(27.7179878,85.3041705),
+      zoom: 9,
+      draggable: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+
+  google.maps.event.addDomListener(window, 'load', myGooglemap);
+</script>
+
+
+
+<body <?php body_class(); ?>>
+
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <span style="margin-right: 20px"><i class="fab fa-whatsapp"></i> +977-9843760242</span>
+        <a href = "mailto: info@glorioushimalaya.com" style="color: #fff;"><i class="fas fa-envelope"></i>  info@glorioushimalaya.com</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-wrap clearfix">
+        <div class="main-logo">
+         <?php 
+         $custom_logo_id = get_theme_mod( 'custom_logo' );
+         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+         ?>
+         <?php $upload_dir = wp_upload_dir(); ?>
+         <span class="lg-logo"><a href="<?= get_site_url()?>"><img src="<?php echo $image[0]; ?>" alt="" > <br><span style="color: #fff;font-size: 11px;float: right;font-weight: lighter;">Dream Dare Discover</span></a></span>
+         <span class="sm-logo"><a href="<?= get_site_url()?>"><img src="<?php echo $upload_dir['baseurl'] . '/2020/07/glorious-logo.png'; ?>" alt="Glorious Himalaya" ></a></span>         
+       </div>
+       <div class="form-menu-wrap">
+        <div class="top-search-form tab-lg-screen">
+         <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ?>">
+          <div class="input-group mb-3">
+            <input type="search" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
+            <div class="input-group-prepend">
+              <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+            </div><!--input-group-prepend-->
+          </div><!--input-group mb-3-->
+        </form>
+      </div><!--tab-lg-screen-->
+
+      <div class="top-search-form tab-sm-screen">
+        <button class="openBtn" onclick="openSearch()"> | &nbsp; <i class="fas fa-search"></i></button>
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ?>">
+              <div class="input-group mb-3">
+                <input type="search" class="search-field" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" />
+                <div class="input-group-prepend">
+                  <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                </div><!--input-group-prepend-->
+              </div><!--input-group mb-3-->
+            </form>
+          </div><!--overlay-content-->
+        </div><!--myOverlay-->
+      </div><!--tab-sm-screen-->
+    </div>
+
+    <?php
+    wp_nav_menu(array(
+      'theme_location' => 'primary',
+      'container'      => false,
+      'menu_class'     => 'nav navbar-nav'
+    ));
+    ?>  
+  </div>
+</div>
+
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+</header>
