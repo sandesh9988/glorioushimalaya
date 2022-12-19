@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta charset="<?php bloginfo('charset'); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" class="stylesheet">
     <!-- Included via Site Options -->
-    <?php
-    if (get_field("site_header_code") != "") {
-        echo $get_field("site_header_code");
-    }
-    ?>
+    <?php if (get_field('site_header_code') != '') {
+        echo $get_field('site_header_code');
+    } ?>
     <!-- End Site Options -->
 
     <?php wp_head(); ?>
@@ -26,23 +24,25 @@
 
 <body <?php body_class(); ?>>
     <!-- Included via Site Options -->
-    <?php
-if (get_field("site_header_code") != "") {
-    echo $get_field("site_body_code");
-}
-?>
+    <?php if (get_field('site_header_code') != '') {
+        echo $get_field('site_body_code');
+    } ?>
     <!-- End Site Options -->
     <header class="header js-header">
         <div class="container">
             <div class="logo__container">
                 <div class="header__logo">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo__link">
+                    <a href="<?php echo esc_url(
+                        home_url('/')
+                    ); ?>" class="logo__link">
                         <figure class="logo__wrap">
                             <img class="header__logo-image"
-                                src="<?php echo get_template_directory_uri() ?>/uploads/glorious.png"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/glorious.png"
                                 alt="Image of a logo" />
                         </figure>
-                        <meta itemprop="name" content="<?php bloginfo('name'); ?>">
+                        <meta itemprop="name" content="<?php bloginfo(
+                            'name'
+                        ); ?>">
                     </a>
                 </div>
                 <div class="header__info">
@@ -69,6 +69,7 @@ if (get_field("site_header_code") != "") {
                             <a href="tel:+977 1 4259 098">+977 1 4259098</a>
                         </div>
                         <div class="header__email">
+                           
                             <svg class="icon icon-icon-email">
                                 <use xlink:href="#icon-icon-email"></use>
                             </svg>
@@ -82,13 +83,13 @@ if (get_field("site_header_code") != "") {
 
 
             <?php
-          // $menuArgs = array(
-          //     'container' => false,
-           //     'menu' => 'Main Navigation',
-           //     'menu_class' => 'primaryNav'
-           // );
-            // wp_nav_menu($menuArgs);
-            ?>
+// $menuArgs = array(
+//     'container' => false,
+//     'menu' => 'Main Navigation',
+//     'menu_class' => 'primaryNav'
+// );
+// wp_nav_menu($menuArgs);
+?>
 
 
         </div>

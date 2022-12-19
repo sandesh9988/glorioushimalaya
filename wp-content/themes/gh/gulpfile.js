@@ -20,8 +20,9 @@ npm install gulp-load-plugins --save-dev
 
 ## always ( to compile/watch/etc )
 gulp
+wp-admin
  wp-admin username: lastdoor
- password: $P$BrX0ZnqrJa4OA/yH9loLQq5xuijR/O0
+ password: lastdoor
   // "test": "echo \"Error: no test specified\" && exit 1"
 */
 

@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 230px;
+    z-index: 13;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      #272c2f 115.04%
+    );
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__heading {
+  max-width: 709px;
+  width: 100%;
+  position: absolute;
+  z-index: 12;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  top: 115px ;
+  right: 0;
+  text-align: center;
+  
+  .hero__title {
+    font-family: $primary-family;
+    font-weight: 700;
+    @include fsz(60px);
+    line-height: 1.3;
+    letter-spacing: -1px;
+    color: $white;
+    text-align: center;
+
+    @media #{$header} {
+        @include fsz(48px);
+      
+    }
+    @media #{$tablet} {
+        @include fsz(32px);
+      
+    }
+    @media #{$phone} {
+        @include fsz(28px);
+      
+    }
+  }
+}
+
+.hero__media {
+  width: 100%;
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.hero__arrow {
+    position: absolute;
+    width: 100%;
+    z-index: 23;
+    padding: 0 30px;
+    display: flex ;
+    align-items: center;
+    top: 50%;
+    justify-content: space-between;
+    .icon {
+       fill: $white;
+       opacity: 0.5;
+       width: 20px;
+       height: 32px;
+       @media #{$tablet} {
+        width: 18px;
+        height: 20px;
+      
+    }
+    }
+}

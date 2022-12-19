@@ -11,9 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 650px) {
+    
+}
   @media #{$header} {
     
-    padding: 10px 0;
+    padding: 0;
     align-items: flex-start;
     
   }
@@ -27,14 +30,17 @@
 }
 
 .logo__wrap {
+  max-width: 198px;
+  width: 100%;
+  height: 50px;
+  @media only screen and (max-width: 650px) {
+    margin-right: 20px;
+}
   .header__logo-image {
-    max-width: 198px;
     
-    height: 50px;
+    width: 100%;
     object-fit: cover;
-    @media only screen and (max-width: 810px) {
-     
-    }
+    
   }
 
 }
@@ -62,6 +68,11 @@
     align-items: center;
     margin-left: 26px;
    }
+
+   @media only screen and (max-width: 460px) {
+    flex-direction: column;
+    align-items: center;
+   }
   a {
     font-weight: 700;
     @include fsz(18px);
@@ -70,23 +81,46 @@
     color: $white;
     @media #{$header} {
       @include fsz(15px);
-      
-      
     }
+    @media only screen and (max-width: 460px) {
+      @include fsz(13px);
+     }
+    
+
     &:hover {
       color: $alt;
     }
   }
+  @media only screen and (max-width: 460px) {
+    @include fsz(10px);
+   }
 
   .header__info-wrapper {
     display: flex;
+    width: 100%;
+    
+    @media only screen and (max-width: 650px) {
+      align-items: center;
+      margin-bottom: 4px;
+     }
+
   }
   .header__contact {
     max-width: 224px;
     width: 100%;
     text-transform: uppercase;
     margin-right: 10px;
-   
+    @media #{$phone} {
+      svg {
+        display: none;
+      }
+      @media only screen and (max-width: 460px) {
+        display: block;
+       }
+      
+      
+    }
+    
   
   }
   .header__profile {
@@ -97,17 +131,34 @@
     @media only screen and (max-width: 810px) {
       display: none;
      }
+    
    
   }
 }
 .header__details {
   max-width: 272px;
   width: 100%;
+  @media only screen and (max-width: 650px) {
+    display: flex;
+    
+}
+@media only screen and (max-width: 460px) {
+  display: flex;
+  justify-content:flex-end;
+
+ }
   .icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
   }
+  @media #{$phone} {
+   width: 70%;
+   
+ }
+ @media only screen and (max-width: 460px) {
+  width: 100%;
+ }
 }
 
 .header__details-phoneNo {
@@ -116,6 +167,17 @@
   align-items: flex-end;
   padding-bottom: 6px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  @media #{$phone} {
+   padding-bottom: 0; 
+   border: none; 
+   
+  
+}
+    a {
+      @media only screen and (max-width: 650px) {
+        display: none;
+    }
+    }
 }
 .header__email {
   padding-top: 6px;
@@ -125,7 +187,26 @@
     width: 30px;
     height: 20px;
     margin-right: 6px;
+    @media #{$phone} {
+        display: none;   
+      
+    }
+    @media only screen and (max-width: 650px) {
+      display: block;
+      width: 20px;
   }
+
+  }
+  @media #{$phone} {
+    padding-top: 0; 
+   
+   
+ }
+ a {
+  @media only screen and (max-width: 650px) {
+    display: none;
+}
+ }
 }
 
 
