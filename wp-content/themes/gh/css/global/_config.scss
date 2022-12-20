@@ -16,7 +16,7 @@ $primary-alt: #3366ff;
 $secondary: #2E5D6F ;
 $secondary-alt: #203942;
 $tertiary: #c52055;
-$tertiary-alt: #E34E4E ;
+$tertiary-alt: rgb(32, 197, 144);
 $quarternary: #ACA3A3;
 $quarternary-alt: #22834E ;
 $alt: #CFA200 ;
@@ -26,8 +26,8 @@ $primary-family: 'Inter', sans-serif;
 
 
 // Media Queries
-$tablet-width: 640px;
-$phone-width: 767px;
+$tablet-width: 767px;
+$phone-width: 640px;
 $header-width: 960px;
 
 $desktop: 'screen and (max-width: #{$container})';

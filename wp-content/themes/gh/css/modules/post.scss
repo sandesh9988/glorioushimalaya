@@ -1,0 +1,243 @@
+.post {
+  padding: 100px 0;
+  @media #{$tablet} {
+    padding: 40px 0;
+   }
+}
+
+.post__description {
+  width: 74%;
+  .post__title {
+    font-family: $primary-family;
+    font-weight: 400;
+    @include fsz(44px);
+    line-height: 1;
+    margin-bottom: 40px;
+    @media #{$header} {
+        @include fsz(36px);
+      }
+      @media #{$tablet} {
+        @include fsz(28px);
+        margin-bottom: 20px;
+      }
+  }
+  @media #{$tablet} {
+    width: 100%;
+   }
+}
+
+.post__link-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  @media #{$tablet} {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.post__link-wrapper {
+  width: 63%;
+  font-family: $primary-family;
+  font-weight: 400;
+  @include fsz(21px);
+  line-height: 1.2;
+  color: $black;
+  @media #{$tablet} {
+    width: 100%;
+  }
+}
+.post__link-button {
+    position: relative;
+  width: 32%;
+  @media #{$tablet} {
+    width: 100%;
+    margin-top: 30px;
+  }
+  a {
+    border-radius: 100px;
+    background-color: $tertiary-alt;
+    padding: 15px 30px;
+    font-family: $primary-family;
+    font-weight: 700;
+    @include fsz(16px);
+    line-height: 1.1;
+    color: $white;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      color: $tertiary-alt;
+      background-color: $white;
+      border: 1px solid $tertiary-alt;
+    }
+  }
+}
+
+.post__fancy-text {
+  position: absolute;
+  font-family: $primary-family;
+  font-style: normal;
+  font-weight: 500;
+  @include fsz(12px);
+  line-height: 1.8;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $black-dark;
+  transform: rotate(-90deg);
+  right: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  @media #{$header} {
+    transform: rotate(0deg);
+    top: 0;
+    margin-top: -30px;
+    left: 0px;
+    right: 0px;
+    @include fsz(18px);
+    text-align: center;
+    }
+}
+
+.post__logo-row {
+ position: relative;
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  @media #{$header} {
+    width: 100%;
+    flex: 1;
+    margin-right: 30px;
+   }
+   @media #{$phone} {
+   margin-bottom: 30px;
+    }
+  .post__media {
+    max-width: 171px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.post__media-wrapper {
+  max-width: 208px;
+  width: 100%;
+  display: flex;
+}
+.post__media--alt {
+  margin-left: 37px;
+}
+
+
+
+//post review comments part
+
+.post__review-title {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: $primary-family;
+  font-weight: 700;
+  @include fsz(16px);
+  line-height: 1.2;
+  color: $black-dark;
+  margin-bottom: 16px;
+
+  @media #{$header} {
+   margin-top: 30px;
+    }
+  .post__review-line {
+    width: 18%;
+    border: none;
+    border: 1px solid $black;
+    margin-left: 14px;
+   
+  }
+  .post__review-media {
+    max-width: 82px;
+    width: 100%;
+    height: 82px;
+    margin-left: -10px;
+    margin-top: -20px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.post__review-comments {
+    width: 50%;
+  margin-left: 80px;
+  font-family: $primary-family;
+  font-weight: 400;
+  @include fsz(26px);
+  line-height: 1.4;
+  color: $black;
+  @media #{$header} {
+    width: 100%;
+    margin-left: 20px;
+    @include fsz(20px);
+    line-height: 1.1;
+     }
+     @media #{$tablet} {
+       
+        margin-left: 10px;
+        @include fsz(18px);
+        line-height: 1.1;
+         }
+  .post__profile {
+    font-weight: 400;
+    @include fsz(14px);
+    line-height: 1.6;
+    margin-top: 18px;
+  }
+}
+
+//sticky media
+.post__stick-wrapper {
+    position: relative;
+    width: 100%;
+    @media #{$header} {
+       display: flex;
+       flex: 1;
+       }
+       @media #{$phone} {
+        align-items: center;
+        flex-direction: column;
+        }
+}
+
+
+.post__sticky-content {
+    position: absolute;
+    max-width: 241px;
+    height: 362px;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 105px;
+
+    .post__sticky-media {
+       width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    @media #{$header} {
+       position: relative;
+       bottom: 0;
+       left: 0;
+       right: 0;
+      }
+
+}
+
