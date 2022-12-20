@@ -106,9 +106,13 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $white;
+    @media #{$header} {
+      @include fsz(20px);
+    }
   }
   @media only screen and (max-width: 1024px) {
     width: 100%;
+    margin-top: 20px;
   }
 }
 
