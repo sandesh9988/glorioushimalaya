@@ -1,21 +1,211 @@
 <footer class="footer">
-    <div class="container">
-        <div class="footer__heading">
-            <p>Follow Us</p>
+    <div class="footer__wrapper">
+        <div class="container">
+            <div class="footer__heading">
+                <p>Follow Us</p>
+            </div>
+            <div class="footer__mediaLinks">
+                <a href="#" target="_blank"><svg class="icon icon-fb">
+                        <use xlink:href="#icon-fb"></use>
+                    </svg> Facebook</a>
+                <a href="#" target="_blank"><svg class="icon icon-twitter">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg> Twitter</a>
+                <a href="#" target="_blank"><svg class="icon icon-insta">
+                        <use xlink:href="#icon-insta"></use>
+                    </svg> Instagram</a>
+                <a href="#" target="_blank"><svg class="icon icon-tripadv">
+                        <use xlink:href="#icon-tripadv"></use>
+                    </svg> Tripadvisor</a>
+            </div>
+            <hr class="footer__line-moreGap">
+            <hr class="footer__line-smallGap ">
+            <div class="footer__logo-content">
+                <div class="footer__signUp">
+                    <h3 class="footer__subTitle">subscribe to our newsletter</h3>
+                    <p>Sign up to receive our trip ideas and travel offers!</p>
+                    <div class="footer__form">
+
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com">
+                        <button type="submit" class="footer__button">Sign up</button>
+                    </div>
+                </div>
+                <div class="footer__description">
+                    <figure class="footer__media">
+                        <img class="footer__logo-image"
+                            src="<?php echo get_template_directory_uri(); ?>/uploads/logoAlt.png"
+                            alt="Image of a logo" />
+                    </figure>
+                    <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve been on the rugged trails of Nepal’s vast Himalayas for over a decade, and we’ve enjoyed it so much right to the hilt. We are skilled seasoned outdoor operators.</p>
+                </div>
+
+            </div>
+            <hr class="footer__line-smallGap ">
+            <div class="footer__bottom-wrapper">
+                <div class="footer__navLinks">
+                    <ul class="footer__tripsList">
+                        <li><a href="#">Trekking</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Adventures</a></li>
+                        <li><a href="#">Offers & Deals</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Travel info</a></li>
+                    </ul>
+                    <ul class="footer__navList">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-left">
+                        <h4 class="footer__info-title">Contact Us, Head Office</h4>
+                        <p><strong>Address:</strong></p>
+                        <p>Thamel, Kathmandu, Nepal<br>GPO Box 5148</p>
+                        <p><strong>Phone:</strong> <a href="tel:+977 1 4544302">+977 1 4544302</a></p>
+                        <p><strong>Email:</strong>info@glorioushimalaya.com</p>
+                    </div>
+                    <div class="footer__info-right">
+                        <p><strong>Address:</strong></p>
+                        <p>C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
+                        <p><strong>Phone:</strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
+                        <p><strong>Email:</strong>jason@glorioushimalaya.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="footer__line-smallGap">
         </div>
-        <div class="footer__mediaLinks">
-            <a href="#" target="_blank"><svg class="icon icon-fb">
-                    <use xlink:href="#icon-fb"></use>
-                </svg> Facebook</a>
-            <a href="#" target="_blank"><svg class="icon icon-twitter">
-                    <use xlink:href="#icon-twitter"></use>
-                </svg> Twitter</a>
-            <a href="#" target="_blank"><svg class="icon icon-insta">
-                    <use xlink:href="#icon-insta"></use>
-                </svg> Instagram</a>
-            <a href="#" target="_blank"><svg class="icon icon-tripadv">
-                    <use xlink:href="#icon-tripadv"></use>
-                </svg> Tripadvisor</a>
+        <hr class="footer__line-moreGap">
+
+    </div>
+    <div class="footer__logoLists">
+        <div class="footer__row-heading">
+            <p>Working with</p>
+        </div>
+        <div class="footer__row-logo">
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w1.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w2.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w3.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w4.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w5.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w6.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w7.png"
+                    alt="Image of a logo" />
+            </figure>
+            <figure class="footer__row-media">
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w8.png"
+                    alt="Image of a logo" />
+            </figure>
+        </div>
+
+        <div class="footer__middle-wrapper">
+            <hr class="footer__line-blackGap">
+            <div class="footer__middle-logo">
+                <div class="footer__left-wrapper">
+                    <div class="footer__row-heading footer__row-heading--baseline">
+                        <p>Associated with</p>
+                    </div>
+
+                    <div class="footer__left">
+
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x1.png"
+                                alt="Image of a logo" />
+                        </figure>
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x2.png"
+                                alt="Image of a logo" />
+                        </figure>
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x3.png"
+                                alt="Image of a logo" />
+                        </figure>
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x4.png"
+                                alt="Image of a logo" />
+                        </figure>
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x5.png"
+                                alt="Image of a logo" />
+                        </figure>
+                        <figure class="footer__left-media">
+                            <img class="footer__left-image"
+                                src="<?php echo get_template_directory_uri(); ?>/uploads/x6.png"
+                                alt="Image of a logo" />
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="footer__right">
+                    <p>© 2006 - 2022<br>All Rights Reserved.<br>Glorious Himalaya Trekking Private Limited</p>
+                    <p>All Contents & Photographs Within This Website Is Copyright ©</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-logo">
+            <hr class="footer__line-blackGap">
+            <div class="footer__row-heading footer__row-heading--margin">
+                <p>we accept</p>
+            </div>
+            <div class="footer__end-wrapper">
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z1.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z2.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z3.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z4.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z5.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z6.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__end-media">
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z7.png"
+                        alt="Image of a logo" />
+                </figure>
+            </div>
         </div>
     </div>
 </footer>
