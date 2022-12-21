@@ -142,6 +142,10 @@
       @include fsz(14px);
       font-weight: 500;
     }
+
+    @media #{$tablet} {
+      width: 60%;
+    }
   
     
   }

@@ -64,13 +64,13 @@
                         <p><strong>Address:</strong></p>
                         <p>Thamel, Kathmandu, Nepal<br>GPO Box 5148</p>
                         <p><strong>Phone:</strong> <a href="tel:+977 1 4544302">+977 1 4544302</a></p>
-                        <p><strong>Email:</strong>info@glorioushimalaya.com</p>
+                        <p><strong>Email:</strong><a href="mailto:info@glorioushimalaya.com">info@glorioushimalaya.com</a></p>
                     </div>
                     <div class="footer__info-right">
                         <p><strong>Address:</strong></p>
                         <p>C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
                         <p><strong>Phone:</strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
-                        <p><strong>Email:</strong>jason@glorioushimalaya.com</p>
+                        <p><strong>Email:</strong><a href="jason@glorioushimalaya.com">jason@glorioushimalaya.com</a></p>
                     </div>
 
                 </div>
@@ -88,36 +88,30 @@
         </div>
         <div class="footer__row-logo">
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w1.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a1.png"
                     alt="Image of a logo" />
             </figure>
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w2.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a2.png"
                     alt="Image of a logo" />
             </figure>
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w3.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a3.png"
                     alt="Image of a logo" />
             </figure>
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w4.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a4.png"
                     alt="Image of a logo" />
             </figure>
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w5.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a5.png"
                     alt="Image of a logo" />
             </figure>
             <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w6.png"
+                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a6.png"
                     alt="Image of a logo" />
             </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w7.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/w8.png"
-                    alt="Image of a logo" />
+           
             </figure>
         </div>
 
@@ -151,16 +145,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/uploads/x4.png"
                                 alt="Image of a logo" />
                         </figure>
-                        <figure class="footer__left-media">
-                            <img class="footer__left-image"
-                                src="<?php echo get_template_directory_uri(); ?>/uploads/x5.png"
-                                alt="Image of a logo" />
-                        </figure>
-                        <figure class="footer__left-media">
-                            <img class="footer__left-image"
-                                src="<?php echo get_template_directory_uri(); ?>/uploads/x6.png"
-                                alt="Image of a logo" />
-                        </figure>
+                        
                     </div>
 
                 </div>
@@ -171,8 +156,9 @@
                 </div>
             </div>
         </div>
+        <hr class="footer__line-blackGap">
         <div class="footer__bottom-logo">
-            <hr class="footer__line-blackGap">
+           
             <div class="footer__row-heading footer__row-heading--margin">
                 <p>we accept</p>
             </div>

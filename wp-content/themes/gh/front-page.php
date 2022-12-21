@@ -124,6 +124,67 @@ the_post();
 
         </div>
     </section>
+    <section class="departure">
+        <div class="container">
+            <div class="blog__heading">
+                <h2 class="blog__title">Join Our Fixed Departures</h2>
+                <p>Go with the right number of like-minded travellers</p>
+            </div>
+            <div class="departure__table">
+                <div class="departure__date">
+                    <label for="date">Filter by:</label>
+                    <input type="date" id="year" name="year" placeholder="Year">
+                    <input type="date" id="month" name="month"  placeholder="Jan">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__heading">
+                <h2 class="blog__title">Recent from our Blog</h2>
+                <p>Places of attraction, travel tips, news and more.</p>
+            </div>
+            <div class="blog__grid">
+                <div class="blog__grid-content">
+                    <figure class="grid__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/h1.jpg"
+                            alt="Image of a trekking" />
+                    </figure>
+                    <h3 class="blog__subtitle">
+                        Annapurna Cycling Tour: Complete Ride Encircling the Famous Annapurna Mountains
+                    </h3>
+                    <p>Cycling in Nepal is a relatively new initiative specifically designed to cater to the needs of
+                        the thrill seekers and those with the.</p>
+
+                </div>
+                <div class="blog__grid-content">
+                    <figure class="grid__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/h2.jpg"
+                            alt="Image of a trekking" />
+                    </figure>
+                    <h3 class="blog__subtitle">
+                        Kailash Tour : Journey to Holy Land of Shiva
+                    </h3>
+                    <p>The revered Mount Kailash (6638 m) dominates the Tibetan landscape and is a major pilgrimage
+                        point for numerous religions; plus its four-sided summit adds a hint of mystery .</p>
+
+                </div>
+                <div class="blog__grid-content">
+                    <figure class="grid__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/h4.jpg"
+                            alt="Image of a trekking" />
+                    </figure>
+                    <h3 class="blog__subtitle">
+                        Annapurna Cycling Tour: Complete Ride Encircling the Famous Annapurna Mountains
+                    </h3>
+                    <p>“It is not the mountains that we conquer, but ourselves” said Sir Edmund Hillary, who, along with
+                        Tenzing Norgay Sherpa, was one of the first two people to scale Mount Everest.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <?php include('modules/flex-content/flex-content.php') ?>
 </main>
 <?php get_footer(); ?>
