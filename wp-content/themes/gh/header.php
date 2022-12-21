@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel=“stylesheet” href=“https://use.typekit.net/ojw1zlp.css”>
     <!-- Included via Site Options -->
     <?php if (get_field('site_header_code') != '') {
         echo $get_field('site_header_code');

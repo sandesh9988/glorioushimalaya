@@ -36,7 +36,9 @@
                             src="<?php echo get_template_directory_uri(); ?>/uploads/logoAlt.png"
                             alt="Image of a logo" />
                     </figure>
-                    <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve been on the rugged trails of Nepal’s vast Himalayas for over a decade, and we’ve enjoyed it so much right to the hilt. We are skilled seasoned outdoor operators.</p>
+                    <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve been on
+                        the rugged trails of Nepal’s vast Himalayas for over a decade, and we’ve enjoyed it so much
+                        right to the hilt. We are skilled seasoned outdoor operators.</p>
                 </div>
 
             </div>
@@ -64,13 +66,15 @@
                         <p><strong>Address:</strong></p>
                         <p>Thamel, Kathmandu, Nepal<br>GPO Box 5148</p>
                         <p><strong>Phone:</strong> <a href="tel:+977 1 4544302">+977 1 4544302</a></p>
-                        <p><strong>Email:</strong><a href="mailto:info@glorioushimalaya.com">info@glorioushimalaya.com</a></p>
+                        <p><strong>Email:</strong><a
+                                href="mailto:info@glorioushimalaya.com">info@glorioushimalaya.com</a></p>
                     </div>
                     <div class="footer__info-right">
                         <p><strong>Address:</strong></p>
                         <p>C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
                         <p><strong>Phone:</strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
-                        <p><strong>Email:</strong><a href="jason@glorioushimalaya.com">jason@glorioushimalaya.com</a></p>
+                        <p><strong>Email:</strong><a href="jason@glorioushimalaya.com">jason@glorioushimalaya.com</a>
+                        </p>
                     </div>
 
                 </div>
@@ -111,7 +115,7 @@
                 <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a6.png"
                     alt="Image of a logo" />
             </figure>
-           
+
             </figure>
         </div>
 
@@ -145,7 +149,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/uploads/x4.png"
                                 alt="Image of a logo" />
                         </figure>
-                        
+
                     </div>
 
                 </div>
@@ -158,7 +162,7 @@
         </div>
         <hr class="footer__line-blackGap">
         <div class="footer__bottom-logo">
-           
+
             <div class="footer__row-heading footer__row-heading--margin">
                 <p>we accept</p>
             </div>
@@ -250,6 +254,19 @@
         <symbol id="icon-twitter" viewBox="0 0 32 32">
             <path
                 d="M32 7.077c-1.18 0.524-2.444 0.875-3.773 1.035 1.357-0.813 2.399-2.1 2.888-3.631-1.267 0.751-2.676 1.297-4.17 1.591-1.197-1.277-2.903-2.072-4.791-2.072-3.626 0-6.567 2.937-6.567 6.563 0 0.514 0.060 1.015 0.172 1.496-5.457-0.274-10.293-2.888-13.532-6.86-0.566 0.972-0.888 2.1-0.888 3.301 0 2.277 1.157 4.286 2.92 5.466-1.077-0.035-2.090-0.332-2.975-0.823 0 0.027 0 0.055 0 0.082 0 3.182 2.264 5.832 5.265 6.438-0.549 0.15-1.13 0.229-1.728 0.229-0.424 0-0.835-0.040-1.237-0.12 0.838 2.606 3.262 4.508 6.133 4.561-2.245 1.76-5.075 2.808-8.153 2.808-0.531 0-1.052-0.030-1.564-0.092 2.903 1.865 6.355 2.95 10.063 2.95 12.076 0 18.68-10.002 18.68-18.674 0-0.284-0.007-0.571-0.017-0.85 1.282-0.925 2.394-2.082 3.275-3.399z">
+            </path>
+        </symbol>
+        <symbol id="icon-arrow-copy-2" viewBox="0 0 50 32">
+            <path d="M0 7.385l7.543-7.385 17.6 17.231 17.6-17.231 7.543 7.385-25.143 24.615-25.143-24.615z"></path>
+        </symbol>
+        <symbol id="icon-rArrow" viewBox="0 0 19 32">
+            <path
+                d="M0.742 27.888c-0.989 0.943-0.989 2.466 0 3.405 0.986 0.942 2.588 0.942 3.577 0l14.138-13.589c0.989-0.943 0.989-2.466 0-3.405l-14.138-13.592c-0.989-0.943-2.588-0.943-3.577 0s-0.989 2.462-0.004 3.402l11.595 11.892-11.591 11.888z">
+            </path>
+        </symbol>
+        <symbol id="icon-searchh" viewBox="0 0 32 32">
+            <path
+                d="M13.148 1.333c-6.511 0-11.815 5.304-11.815 11.815s5.304 11.815 11.815 11.815c2.816 0 5.405-0.995 7.438-2.648l7.994 7.994c0.113 0.117 0.247 0.211 0.397 0.275s0.31 0.099 0.473 0.1c0.163 0.002 0.324-0.029 0.474-0.091s0.287-0.152 0.402-0.267c0.115-0.115 0.206-0.252 0.267-0.402s0.092-0.312 0.091-0.474-0.036-0.323-0.1-0.473c-0.065-0.149-0.158-0.284-0.275-0.397l-7.994-7.994c1.653-2.033 2.648-4.622 2.648-7.438 0-6.511-5.304-11.815-11.815-11.815zM13.148 3.778c5.19 0 9.37 4.181 9.37 9.37 0 2.528-0.997 4.812-2.615 6.495-0.1 0.073-0.188 0.161-0.261 0.261-1.683 1.618-3.967 2.615-6.495 2.615-5.19 0-9.37-4.181-9.37-9.37s4.181-9.37 9.37-9.37z">
             </path>
         </symbol>
     </defs>

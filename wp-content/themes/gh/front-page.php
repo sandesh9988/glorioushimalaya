@@ -9,7 +9,7 @@ the_post();
                 <h1 class="hero__title">Experience the Natural Beauty of Nepal</h1>
                 <div class="hero__search-button">
                     <input type="search" id="search" name="search" placeholder="Search: Everest Basecamp Trek">
-                    <button type="search" class="hero__button">Sign up!</button>
+                    <button type="search" class="hero__button">Search</button>
                 </div>
             </div>
         </div>
@@ -116,11 +116,216 @@ the_post();
                         EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br>Did
                         this trek from 4th to 15th December 2022.</p>
                     <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
                         <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
                     </div>
                 </div>
             </div>
 
+
+        </div>
+    </section>
+    <section class="grid-content">
+        <div class="container">
+
+            <h2 class="grid-content__title">Our Best Sellers</h2>
+            <div class="grid-content-wrapper">
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s1.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s2.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s3.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s4.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s5.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-content__row">
+                    <figure class="grid-content__media">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/s6.jpg"
+                            alt="Image of a trekking" />
+                        <div class="grid-content__sub-heading">
+                            <h3 class="grid-content__subTitle">Annapurna Base Camp Trek</h3>
+                        </div>
+                        <span class="grid-content__tag">Popular</span>
+                    </figure>
+                    <div class="grid-content__details">
+                        <table class="grid-content__content">
+                            <tr class="grid-content__main-row">
+                                <th>Trip Days</th>
+                                <th>Difficulty</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr class="grid-content__data-row">
+                                <td><strong>10 Days</strong></td>
+                                <td><strong>Easy</strong></td>
+                                <td><strong>$1200</strong>/pp</td>
+                            </tr>
+                        </table>
+                        <div class="grid-content__description">
+                            <p>Experience the Costa Rican rainforest, mountains and coast</p>
+                        </div>
+
+                        <div class="grid-content__link">
+                            <a href="#">View Trip Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </section>
@@ -133,8 +338,109 @@ the_post();
             <div class="departure__table">
                 <div class="departure__date">
                     <label for="date">Filter by:</label>
-                    <input type="date" id="year" name="year" placeholder="Year">
-                    <input type="date" id="month" name="month"  placeholder="Jan">
+                    <div class="departure__date-box">
+                        <!-- <input type="date" id="year" name="year" placeholder="Year"> -->
+                        <p>Year</p>
+                        <svg class="icon icon-arrow-copy-2">
+                            <use xlink:href="#icon-arrow-copy-2"></use>
+                        </svg>
+                    </div>
+                    <div class="departure__date-box">
+                        <p>Jan</p><!-- <input type="date" id="month" name="month" placeholder="Jan"> -->
+                        <svg class="icon icon-arrow-copy-2">
+                            <use xlink:href="#icon-arrow-copy-2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="departure__table-wrapper">
+                    <table class="departure__content">
+                        <tr class="departure__main-row">
+                            <th>Departing</th>
+                            <th>Trip Name</th>
+                            <th>Days</th>
+                            <th>Trip Status</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>19th September, 2016</td>
+                            <td>Manaslu & Tsum Valley Trek</td>
+                            <td>12</td>
+                            <td>Booked</td>
+                            <td class="departure__data-flex">
+                                <p>$1,440.00</p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>5th October, 2016</td>
+                            <td>Jiri-Lukla Everest Three Passes Trek</td>
+                            <td>16</td>
+                            <td>Avaliable</td>
+                            <td class="departure__data-flex">
+                                <p>Upon Request </p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>7th October, 2016</td>
+                            <td>Langtang triangle trek 17 days</td>
+                            <td>17</td>
+                            <td>Avaliable</td>
+                            <td class="departure__data-flex">
+                                <p>$1,440.00</p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>10th October, 2016</td>
+                            <td>Everest Base Camp Trek</td>
+                            <td>13</td>
+                            <td>Avaliable</td>
+                            <td class="departure__data-flex">
+                                <p>$1,440.00</p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>27th October, 2016</td>
+                            <td>Manaslu Trek</td>
+                            <td>12</td>
+                            <td>Avaliable</td>
+                            <td class="departure__data-flex">
+                                <p>$1,340.00</p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>3rd December, 2016</td>
+                            <td>Annapurna Panorama Trek</td>
+                            <td>8</td>
+                            <td>Avaliable</td>
+                            <td class="departure__data-flex">
+                                <p>$1,340.00</p>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="departure__subHeading">
+                    <h3 class="departure__subHeading-title">Choose a Private Trip</h3>
+                    <p>If you'd prefer to share this with your own group of friends, we've got good news, it's also
+                        available as a Private Adventure!, Our Private Adventure specialists are on hand to give you a
+                        quote or talk through some different options. Feel free to give them a call on +977 1 4259 098
+                        or Email us at info@golorioushimalaya.com</p>
                 </div>
             </div>
         </div>
@@ -185,6 +491,6 @@ the_post();
             </div>
         </div>
     </section>
-    <?php include('modules/flex-content/flex-content.php') ?>
+    <?php include 'modules/flex-content/flex-content.php'; ?>
 </main>
 <?php get_footer(); ?>
