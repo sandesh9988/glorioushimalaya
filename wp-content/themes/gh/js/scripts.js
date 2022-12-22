@@ -155,12 +155,17 @@ $(function () {
     
 
 }); 
+
+const hamburgerButton = document.querySelector('.menuBar__container');
+const popupMenu = document.querySelector('.header__navList');
+
+hamburgerButton.addEventListener('click', () => {
+  popupMenu.classList.toggle('open');
+});
        
 });
 
-// $('.menuBar__container').click(function(){
-//      $().toggleClass('.header__navList');
-// });
+
 $(function () {
 
     $('.js-header').e11_MobileNav();

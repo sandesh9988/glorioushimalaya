@@ -136,7 +136,7 @@
     @include fsz(16px);
     line-height: 1.1;
     border-radius: 100px 0px 0px 100px;
-    outline: 4px solid #2e5d6f;
+    outline: 4px solid $black-dark;
     border-right: none;
   }
 
@@ -152,6 +152,7 @@
     padding: 17px 34px;
     font-family: $primary-family;
     font-weight: 700;
+   
 
     @include fsz(14px);
     line-height: 1;
@@ -354,25 +355,32 @@
     text-align: center;
   }
 }
+
+.footer__row-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .footer__row-logo {
   width: 70%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 46px;
-  margin-right: 30px;
+  margin-bottom: 46px; 
+  margin: 0 auto;
+  
   @media #{$header} {
     width: 100%;
-    margin-bottom: 20px;
-    
-
-    .footer__row-media {
-      @media #{$header} {
-        margin-bottom: 20px;
-        margin-right: 10px;
-      }
+    margin-bottom: 0px;
+  }
+  .footer__row-media {
+    margin-right: 30px;
+    @media #{$header} {
+      margin-bottom: 20px;
+      margin-right: 10px;
     }
   }
 }

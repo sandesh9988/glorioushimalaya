@@ -90,33 +90,35 @@
         <div class="footer__row-heading">
             <p>Working with</p>
         </div>
-        <div class="footer__row-logo">
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a1.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a2.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a3.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a4.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a5.png"
-                    alt="Image of a logo" />
-            </figure>
-            <figure class="footer__row-media">
-                <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a6.png"
-                    alt="Image of a logo" />
-            </figure>
+        <div class="footer__row-wrapper">
+            <div class="footer__row-logo">
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a1.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a2.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a3.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a4.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a5.png"
+                        alt="Image of a logo" />
+                </figure>
+                <figure class="footer__row-media">
+                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a6.png"
+                        alt="Image of a logo" />
+                </figure>
 
-            </figure>
+                </figure>
+            </div>
         </div>
 
         <div class="footer__middle-wrapper">

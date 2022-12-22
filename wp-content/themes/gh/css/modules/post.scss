@@ -1,28 +1,43 @@
 .post {
   position: relative;
   padding: 100px 0;
-  @media #{$tablet} {
+  @media #{$header} {
     padding: 40px 0;
+   }
+   @media #{$phone} {
+    padding: 20px 0;
    }
 }
 
 .post__description {
-  width: 74%;
+  width: 83%;
   .post__title {
-    font-family: $primary-family;
+    font-family: $secondary-family;
     font-weight: 400;
-    @include fsz(44px);
+    @include fsz(68px);
     line-height: 1;
     margin-bottom: 40px;
+    @media only screen and (max-width: 1200px) {
+      @include fsz(58px);
+    }
+    
     @media #{$header} {
-        @include fsz(36px);
-      }
-      @media #{$tablet} {
-        @include fsz(28px);
+        @include fsz(46px);
         margin-bottom: 20px;
       }
+      @media #{$tablet} {
+        @include fsz(36px);
+       
+      }
+      @media #{$phone} {
+        @include fsz(28px);
+        font-weight: 600;
+      }
+      @media only screen and (max-width: 480px) {
+        @include fsz(22px);
+       }
   }
-  @media #{$header} {
+  @media only screen and (max-width: 1070px) {
     width: 100%;
    }
 }
@@ -40,9 +55,9 @@
 }
 .post__link-wrapper {
   width: 63%;
-  font-family: $primary-family;
+  font-family: $secondary-family;
   font-weight: 400;
-  @include fsz(21px);
+  @include fsz(26px);
   line-height: 1.2;
   color: $black;
   @media #{$tablet} {
@@ -175,7 +190,7 @@
 .post__review-comments {
     width: 50%;
   margin-left: 80px;
-  font-family: $primary-family;
+  font-family: $secondary-family;
   font-weight: 400;
   @include fsz(26px);
   line-height: 1.4;
@@ -193,6 +208,7 @@
         line-height: 1.1;
          }
   .post__profile {
+    font-family: $primary-family;
     font-weight: 400;
     @include fsz(14px);
     line-height: 1.6;

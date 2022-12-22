@@ -41,7 +41,7 @@ the_post();
 
         <div class="container">
             <div class="post__description">
-                <h2 class="post__title">Eco-Friendly Trekking in Nepal: Adventures for All Levels and Borders</h2>
+                <h2 class="post__title">Eco-Friendly Trekking in Nepal:<br>Adventures for All Levels and Borders</h2>
                 <div class="entry-content">
                     <p>We specialize in eco-friendly and down-to-earth adventures, and we are committed to protecting
                         the
@@ -360,78 +360,67 @@ the_post();
                             <th>Days</th>
                             <th>Trip Status</th>
                             <th>Price</th>
+                            <th colspan="2"></th>
                         </tr>
                         <tr class="departure__data-row">
                             <td>19th September, 2016</td>
                             <td>Manaslu & Tsum Valley Trek</td>
                             <td>12</td>
                             <td>Booked</td>
-                            <td class="departure__data-flex">
-                                <p>$1,440.00</p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>5th October, 2016</td>
                             <td>Jiri-Lukla Everest Three Passes Trek</td>
                             <td>16</td>
                             <td>Avaliable</td>
-                            <td class="departure__data-flex">
-                                <p>Upon Request </p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>Upon Request</td>
+                            <td><div class="departure__button"><a href="#" >Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>7th October, 2016</td>
                             <td>Langtang triangle trek 17 days</td>
                             <td>17</td>
                             <td>Avaliable</td>
-                            <td class="departure__data-flex">
-                                <p>$1,440.00</p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>10th October, 2016</td>
                             <td>Everest Base Camp Trek</td>
                             <td>13</td>
                             <td>Avaliable</td>
-                            <td class="departure__data-flex">
-                                <p>$1,440.00</p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>27th October, 2016</td>
                             <td>Manaslu Trek</td>
                             <td>12</td>
                             <td>Avaliable</td>
-                            <td class="departure__data-flex">
-                                <p>$1,340.00</p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>3rd December, 2016</td>
                             <td>Annapurna Panorama Trek</td>
                             <td>8</td>
                             <td>Avaliable</td>
-                            <td class="departure__data-flex">
-                                <p>$1,340.00</p>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
+                                        </svg></a></div></td>
                         </tr>
                     </table>
                 </div>

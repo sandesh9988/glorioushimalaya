@@ -168,14 +168,8 @@
 
   input::placeholder {
     @media only screen and (max-width: 510px) {
-      @include fsz(14px);
-      font-weight: 400;
-      width: 24%;
+      color: transparent;
     }
-    @media only screen and (max-width: 460px) {
-      @include fsz(14px);
-      font-weight: 400;
-      width: 30%;
-    }
+   
   }
 }

@@ -54,10 +54,6 @@
                                         <use xlink:href="#icon-icon-phone"></use>
                                     </svg> +977 1 4259 098</a></p>
                         </div>
-                        <figure class="header__profile">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile.png"
-                                alt="Image of a trekking" />
-                        </figure>
                     </div>
                     <div class="header__details">
                         <div class="header__details-phoneNo">
@@ -70,7 +66,7 @@
                             <a href="tel:+977 1 4259 098">+977 1 4259098</a>
                         </div>
                         <div class="header__email">
-                           
+
                             <svg class="icon icon-icon-email">
                                 <use xlink:href="#icon-icon-email"></use>
                             </svg>
@@ -80,7 +76,7 @@
                 </div>
 
             </div>
-          
+
 
 
             <?php
@@ -94,6 +90,7 @@
 
 
         </div>
+
         <div class="header__mainNav">
             <div class="container">
                 <ul class="header__navList">
@@ -105,24 +102,26 @@
                     <li class="header__navLinks"><a href="#">Travel Guides</a></li>
                     <li class="header__navLinks"><a href="#">Contact Us</a></li>
                 </ul>
-                <div class="burger">
-                    <a href="#" class="mobileNav__toggle js-nav-toggle">
-                        <span class="accessible-text">Click to toggle navigation menu.</span>
-                        <div class="menuBar__container">
-                            <span class="menuBar"></span>
-                            <span class="menuBar"></span>
-                            <span class="menuBar"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="header__search">
-                    <button>
-                        <svg class="icon icon-icon-search">
-                            <use xlink:href="#icon-icon-search"></use>
-                        </svg>
-                    </button>
-                </div>
+                <div class="header__menuBar-wrapper">
+                    <div class="hamburger-button">
+                        <a href="#" class="mobileNav__toggle js-nav-toggle">
+                            <span class="accessible-text">Click to toggle navigation menu.</span>
+                            <div class="menuBar__container">
+                                <span class="menuBar"></span>
+                                <span class="menuBar"></span>
+                                <span class="menuBar"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <button>
+                            <svg class="icon icon-icon-search">
+                                <use xlink:href="#icon-icon-search"></use>
+                            </svg>
+                        </button>
+                    </div>
 
+                </div>
             </div>
         </div>
     </header>
