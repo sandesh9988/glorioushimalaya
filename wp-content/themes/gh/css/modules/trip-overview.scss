@@ -1,0 +1,190 @@
+.trip-overview {
+  position: relative;
+  margin-bottom: 40px;
+  > .container {
+    display: flex;
+    
+    align-items: flex-start;
+    gap: 30px;
+    
+  }
+}
+
+.trip-overview__content {
+  max-width: 770px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-top: 30px;
+
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    font-weight: 400;
+    @include fsz(16px);
+    line-height: 1.4;
+    color: $black-dark;
+  }
+}
+
+.trip-overview__title {
+  position: relative;
+  width: 100%;
+  font-family: $secondary-family;
+  font-weight: 400;
+  @include fsz(40px);
+  line-height: 1;
+  letter-spacing: 0.16px;
+  color: $black-dark;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 11;
+    top: auto;
+    left: 0;
+    bottom: 16px;
+  }
+}
+
+.trip-overview__map {
+    position: sticky;
+    top: 70px;
+ max-width: 370px;
+  width: 100%;
+  padding: 20px;
+  background: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12), 0px 0px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  margin-top: 30px;
+  .trip-overview__map-title {
+    font-family: $primary-family;
+    font-weight: 700;
+    @include fsz(22px);
+    line-height: 1.1;
+    color: $pre-alt;
+    margin-bottom: 30px;
+  }
+}
+.trip-overview__map-wrapper {
+  max-width: 370px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .trip-overview__mediaList {
+    max-width: 370px;
+    width: 100%;
+    height: 523px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.trip-overview__link {
+  max-width: 370px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $tertiary-alt;
+  font-family: $primary-family;
+  font-weight: 400;
+  @include fsz(14px);
+  line-height: 1.2;
+  text-align: center;
+  color: $white;
+  border-radius: 100px;
+  margin-top: 30px;
+  &:hover {
+    background: $white;
+    color: $tertiary-alt;
+    border: 1px solid $tertiary-alt;
+  }
+  strong {
+    font-weight: 800;
+  }
+}
+
+//media lists
+
+.trip-overview__mediaList {
+    max-width: 26px;
+  width: 100%;
+  position: sticky;
+  top: 70px;
+  margin-top: 30px;
+  
+}
+
+.trip-overview__lists {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .icon-icons8-twitter {
+    fill: $black;
+    width: 25px;
+    height: 20px;
+    &:hover {
+      fill: $twitter;
+    }
+  }
+  .icon-icons8-sms {
+    fill: $black;
+    width: 26px;
+    height: 24px;
+    &:hover {
+      fill: $linkedin;
+    }
+  }
+
+  .icon-icons8-whatsapp {
+    fill: $black;
+    width: 26px;
+    height: 26px;
+    &:hover {
+      fill: $forrst;
+    }
+  }
+  .icon-icons8-instagram_new {
+    fill: $black;
+    width: 26px;
+    height: 26px;
+    &:hover {
+      fill: $instagram;
+    }
+  }
+  .icon-icons8-facebook {
+    fill: $black;
+    width: 26px;
+    height: 26px;
+    &:hover {
+      fill: $facebook;
+    }
+  }
+  .icon-icons8-facebook_messenger {
+    fill: $black;
+    width: 26px;
+    height: 26px;
+    &:hover {
+      fill: $instagram-alt;
+    }
+  }
+}
