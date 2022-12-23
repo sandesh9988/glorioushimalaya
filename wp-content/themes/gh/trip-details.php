@@ -97,7 +97,7 @@ the_post();
                     <li><a href="#itinerary">Itinerary</a></li>
                     <li><a href="#includ__exclude">Include/Exclude</a></li>
                     <li><a href="#cost__dates">Cost & Dates</a></li>
-                    <li><a href="#trip___info">Trip Info</a></li>
+                    <li><a href="#trip__info">Trip Info</a></li>
                     <li><a href="#Reviews">Reviews</a></li>
                 </ul>
             </div>
@@ -312,6 +312,111 @@ the_post();
              <div class="itinerary__accordion">
                 <h2 class="itinerary__title"></h2>
              </div>
+        </div>
+    </section>
+    <section class="departure" id="trip__info">
+        <div class="container">
+            <div class="blog__heading">
+                <h2 class="blog__title" >Join Our Fixed Departures</h2>
+                <p>Go with the right number of like-minded travellers</p>
+            </div>
+            <div class="departure__table--trips">
+                <div class="departure__date">
+                    <label for="date">Filter by:</label>
+                    <div class="departure__date-box">
+                        <!-- <input type="date" id="year" name="year" placeholder="Year"> -->
+                        <p>Year</p>
+                        <svg class="icon icon-arrow-copy-2">
+                            <use xlink:href="#icon-arrow-copy-2"></use>
+                        </svg>
+                    </div>
+                    <div class="departure__date-box">
+                        <p>Jan</p><!-- <input type="date" id="month" name="month" placeholder="Jan"> -->
+                        <svg class="icon icon-arrow-copy-2">
+                            <use xlink:href="#icon-arrow-copy-2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="departure__table-wrapper">
+                    <table class="departure__content">
+                        <tr class="departure__main-row">
+                            <th>Departing</th>
+                           
+                            <th>Days</th>
+                            <th>Trip Status</th>
+                            <th>Price</th>
+                            <th colspan="2"></th>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>19th September, 2016</td>
+                            
+                            <td>12</td>
+                            <td>Booked</td>
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>5th October, 2016</td>
+                            
+                            <td>16</td>
+                            <td>Avaliable</td>
+                            <td>Upon Request</td>
+                            <td><div class="departure__button"><a href="#" >Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>7th October, 2016</td>
+                            
+                            <td>17</td>
+                            <td>Avaliable</td>
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>10th October, 2016</td>
+                            
+                            <td>13</td>
+                            <td>Avaliable</td>
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>27th October, 2016</td>
+                           
+                            <td>12</td>
+                            <td>Avaliable</td>
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                        <tr class="departure__data-row">
+                            <td>3rd December, 2016</td>
+                            
+                            <td>8</td>
+                            <td>Avaliable</td>
+                            <td>$1,440.00</td>
+                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                            <use xlink:href="#icon-rArrow"></use>
+                                        </svg></a></div></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="departure__subHeading">
+                    <h3 class="departure__subHeading-title">Choose a Private Trip</h3>
+                    <p>If you'd prefer to share this with your own group of friends, we've got good news, it's also
+                        available as a Private Adventure!, Our Private Adventure specialists are on hand to give you a
+                        quote or talk through some different options. Feel free to give them a call on +977 1 4259 098
+                        or Email us at info@golorioushimalaya.com</p>
+                </div>
+            </div>
         </div>
     </section>
     <?php include('modules/flex-content/flex-content.php') ?>
