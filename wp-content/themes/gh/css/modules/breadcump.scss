@@ -1,0 +1,54 @@
+.breadcump {
+  padding: 20px 0;
+  @media #{$tablet} {
+    padding: 10px 0;
+  }
+}
+
+.breadcump__list {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    .breadcump__links {
+        position: relative;
+      font-family: $primary-family;
+      font-weight: 400;
+      @include fsz(16px);
+      line-height: 1.5;
+      color: $black-dark;
+      text-decoration: underline;
+      margin-right: 5px;
+      padding-bottom: 4px;
+      &:hover {
+        text-decoration: none;
+      }
+      @media #{$tablet} {
+        @include fsz(14px);
+      }
+      @media #{$phone} {
+        @include fsz(14px);
+      }
+      @media only screen and (max-width: 450px) {
+        @include fsz(10px);
+      }
+    }
+    
+    .breadcump__links--alt {
+       text-decoration: none;
+       &:hover {
+        text-decoration: underline;
+       }
+    }
+    .icon {
+        width: 16px;
+        height: 22px; 
+        font-weight: 400;
+        fill: $black;
+     }
+  }
+}

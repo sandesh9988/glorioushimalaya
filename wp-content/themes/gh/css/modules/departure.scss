@@ -102,10 +102,10 @@
 
 
   .departure__button {
-    max-width: 146px;
-    width: 100%;
+    
     position: relative;
-    margin-left: auto;
+   
+   
     
     a {
       padding: 7px 30px;
@@ -133,9 +133,9 @@
         margin-left: 6px;
       }
       &:hover {
+        
         color: $white;
         background-color: $tertiary;
-        border: 1px solid $tertiary;
         fill: $white;
         .icon-rArrow {
           fill: $white;
