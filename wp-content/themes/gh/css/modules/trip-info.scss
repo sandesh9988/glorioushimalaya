@@ -152,6 +152,15 @@
   }
 }
 
+.trip-info__row--alt {
+  max-width: 251px;
+  width: 100%;
+   dd {
+    max-width: 97px;
+    text-align: right;
+   }
+}
+
 .trip-info-verified {
     max-width: 213px;
     width: 100%;

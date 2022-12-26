@@ -1,0 +1,50 @@
+.trip-list {
+  padding-bottom: 30px;
+  .trip-lists__lists {
+    list-style-image: url("uploads/include.png");
+  }
+
+  .trip-lists__lists--cross {
+    list-style-image: url("uploads/exclude.png");
+  }
+}
+
+.trip-list__icon-bar {
+    width: 64%;
+  padding-left: 13px;
+  display: flex;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+border-radius: 4px;
+  margin-top: 30px;
+  .trip-list__link {
+    padding:30px 20px ;
+    border-right: 1px solid rgba(0, 0, 0, 0.2) ;
+    &:last-child {
+        border-right: none;
+    }
+    a {
+      font-family: $primary-family;
+      font-weight: 700;
+      @include fsz(16px);
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      color: $black-dark;
+      display: flex;
+      align-items: center;
+     
+      &:hover {
+        color: $tertiary;
+
+        svg {
+            fill: $tertiary;
+        }
+      }
+
+      .icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

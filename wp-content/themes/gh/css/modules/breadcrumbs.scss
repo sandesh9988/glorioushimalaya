@@ -1,11 +1,11 @@
-.breadcump {
+.breadcrumbs {
   padding: 20px 0;
   @media #{$tablet} {
     padding: 10px 0;
   }
 }
 
-.breadcump__list {
+.breadcrumbs__list {
     width: 100%;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
-    .breadcump__links {
+    .breadcrumbs__links {
         position: relative;
       font-family: $primary-family;
       font-weight: 400;
@@ -38,7 +38,7 @@
       }
     }
     
-    .breadcump__links--alt {
+    .breadcrumbs__links--alt {
        text-decoration: none;
        &:hover {
         text-decoration: underline;

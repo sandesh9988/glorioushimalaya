@@ -1,0 +1,274 @@
+.accordion {
+  position: relative;
+  margin-bottom: 30px;
+
+  .accordion__link {
+    font-family: $primary-family;
+    margin-bottom: 20px;
+    #expand-all {
+      font-weight: 400;
+      @include fsz(16px);
+      line-height: 1.4;
+      text-align: right;
+      text-decoration-line: underline;
+      color: $tertiary;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.accordion__heading-wrapper {
+  position: relative;
+  background: rgba(32, 197, 144, 0.1);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  &:after {
+    content: "";
+    position: absolute;
+    border: 2px dashed $black-dark;
+    height: calc(100% - 7px);
+   width: 1px;
+    z-index: 31;
+    right: auto;
+    left: 40px;
+    top: 50px;
+    bottom: 0px;
+
+    @media only screen and (max-width: 420px) {
+      display: none;
+    }
+
+  }
+  &:last-child {
+    &:after {
+      content: "";
+      display: none;
+    }
+  }
+}
+.accordion__heading {
+  position: relative;
+  padding: 30px 0 20px 30px;
+  display: flex;
+  cursor: pointer;
+
+
+  @media only screen and (max-width: 420px) {
+    padding: 10px;
+  }
+  &:before {
+    content: "";
+    position: relative;
+    max-width: 24px;
+    height: 24px;
+    width: 100%;
+    z-index: 23;
+    top: -4px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23EA9642'/%3E%3Ccircle cx='12' cy='12' r='5' fill='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: auto;
+    @media #{$phone} {
+      top: 0;
+    }
+    @media only screen and (max-width: 420px) {
+      display: none;
+    }
+  
+  }
+  
+
+  .accordion__title {
+    font-family: $secondary-family;
+    font-weight: 400;
+    @include fsz(33px);
+    line-height: 1;
+    color: $black-dark;
+    padding-left: 10px;
+    @media #{$header} {
+      @include fsz(28px);
+     
+    }
+    @media #{$tablet} {
+      @include fsz(24px);
+     
+    }
+    @media #{$phone} {
+      @include fsz(18px);
+     
+    }
+    @media only screen and (max-width: 420px) {
+      padding-left: 0;
+    }
+  }
+
+  span {
+    text-align: center;
+    font-family: $primary-family;
+    font-weight: 400;
+    @include fsz(14px);
+    line-height: 1.2;
+    color: $black-dark;
+    padding-left: 15px;
+    @media #{$tablet} {
+      @include fsz(12px);
+     
+    }
+
+    strong {
+      font-family: $secondary-family;
+      font-weight: 700;
+      @include fsz(33px);
+      line-height: 1;
+      letter-spacing: -2px;
+      color: $black-dark;
+      @media #{$header} {
+        @include fsz(28px);
+       
+      }
+      @media #{$tablet} {
+        @include fsz(24px);
+       
+      }
+      @media #{$phone} {
+        @include fsz(18px);
+       
+      }
+    }
+  }
+}
+
+.accordion__fancy-text {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.accordion__heading-wrapper--alt__color {
+  background: rgba(134, 136, 254, 0.05);
+}
+
+.accordion__content {
+  padding-left: 105px;
+  
+  display: none;
+  @media #{$header} {
+    padding-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+  }
+  @media only screen and (max-width: 420px) {
+   padding-left: 25px;
+  }
+}
+
+.accordion__content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media #{$header} {
+   align-items: center;
+   justify-content: center;
+   
+  }
+}
+
+.accordion__content-left {
+  width: 45.5%;
+  margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+  @media #{$header} {
+    width: 100%;
+   
+  }
+
+  .accordion__info {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 61px;
+  }
+  
+}
+.accordion__media {
+  max-width: 511px;
+  height: 383px;
+  width: 100%;
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.accordion__content-left--row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+
+  @media #{$header} {
+    flex-direction: column;
+   
+  }
+}
+
+.accordion__content-right {
+  width: 44%;
+  font-family: $primary-family;
+  font-weight: 400;
+  @include fsz(16px);
+  line-height: 1.4;
+  color: $black-dark;
+  @media #{$header} {
+    width: 100%;
+   
+  }
+  @media #{$tablet} {
+    @include fsz(14px);
+   
+  }
+  
+}
+
+.accordion__content-right--alt {
+  width: 47%;
+}
+
+.accordion__description {
+  
+  width: 100%;
+  font-family: $primary-family;
+  font-weight: 400;
+  @include fsz(16px);
+  line-height: 1.4;
+  color: $black-dark;
+  @media #{$tablet} {
+    @include fsz(14px);
+   
+  }
+}
+
+.accordion__column {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+
+.accordion__description {
+  margin-top: 33px;
+}
+
+.accordion__content.expanded {
+  display: block;
+}
