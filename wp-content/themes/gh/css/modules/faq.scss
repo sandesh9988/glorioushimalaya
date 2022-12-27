@@ -1,0 +1,146 @@
+.faq {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.faq__heading {
+  .faq__title {
+    font-family: $secondary-family;
+    font-weight: 700;
+    @include fsz(40px);
+    line-height: 1;
+    letter-spacing: 0.16px;
+    color: $black-dark;
+    margin-bottom: 30px;
+    @media #{$header} {
+        @include fsz(32px);
+       }
+       @media #{$header} {
+        @include fsz(26px);
+       }
+  }
+}
+
+.faq__content {
+  margin-bottom: 15px;
+  .faq__content-heading {
+    cursor: pointer;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    @media #{$header} {
+       padding: 16px;
+      }
+    .faq__content-title {
+      font-family: $secondary-family;
+      font-weight: 400;
+      @include fsz(33px);
+      line-height: 1;
+      color: $black-dark;
+
+      @media #{$header} {
+        @include fsz(28px);
+      }
+      @media #{$header} {
+        @include fsz(22px);
+       }
+    }
+  }
+  .faq__content-description {
+    font-family: $primary-family;
+      font-weight: 400;
+      @include fsz(18px);
+      line-height: 1.5;
+      color: $black-dark;
+      padding: 20px 0 20px 80px;
+
+      @media #{$header} {
+        @include fsz(16px);
+        padding: 10px 30px;
+      }
+      @media #{$header} {
+        @include fsz(14px);
+       }
+      br {
+        margin-bottom: 6px;
+      }
+      a {
+        color: $black-dark;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+      }
+  }
+   ul {
+    list-style-type: disc;
+    padding-top: 20px;
+    padding-left: 20px;
+    @media #{$header} {
+       padding-left: 10px;
+       padding-top: 10px;
+      }
+    li {
+        font-family: $secondary-family;
+        @include fsz(22px);
+        @media #{$header} {
+            @include fsz(18px);
+           }
+           @media #{$header} {
+            @include fsz(16px);
+           }
+    }
+   }
+   ol {
+   list-style-type: decimal;
+    padding-left: 20px;
+    padding-top: 20px;
+    @media #{$header} {
+        padding-left: 10px;
+        padding-top: 10px;
+       }
+    li {
+        font-family: $secondary-family;
+        @include fsz(22px);
+        @media #{$header} {
+            @include fsz(18px);
+           }
+           @media #{$header} {
+            @include fsz(16px);
+           }
+    }
+   }
+}
+
+//for accordion
+
+.faq__content .faq__content-description {
+ display: none;
+  transition: height 0.2s ease-out;
+}
+
+.faq__content.opened .faq__content-description {
+  display: block;
+}
+
+.faq__content {
+  overflow: hidden;
+}
+
+//expand all and collapse all
+
+.faq__button {
+    margin-bottom: 20px;
+    button {
+    font-family: $primary-family;
+    font-weight: 400;
+    @include fsz(16px);
+    line-height: 1.4;
+    text-decoration-line: underline;
+    color: $tertiary;
+    &:hover {
+        text-decoration: none;
+    }
+    
+    }
+}

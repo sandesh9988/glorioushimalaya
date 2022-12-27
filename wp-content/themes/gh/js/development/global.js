@@ -28,55 +28,82 @@ accordionItems.forEach(item => {
 });
 
 //expand all and collapse all
-const accordionHeaders = document.querySelectorAll('.accordion__heading');
-const accordionContents = document.querySelectorAll('.accordion__content');
 
-accordionHeaders.forEach(header => {
-  header.addEventListener('click', e => {
-    const content = header.nextElementSibling;
-    content.classList.toggle('expanded');
-  });
-});
+const expandAndCollapse = document.getElementById('expandCollapse');
+const collapses = document.querySelectorAll('.accordion__content');
 
-document.getElementById('expand-all').addEventListener('click', e => {
-  accordionContents.forEach(content => {
-    content.classList.add('expanded');
-  });
-});
+let isExpand = false;
 
-document.getElementById('collapse-all').addEventListener('click', e => {
-  accordionContents.forEach(content => {
-    content.classList.remove('expanded');
-  });
+expandAndCollapse.addEventListener('click', () => {
+  isExpand = !isExpand;
 
-//change in buttons
-const toggleButton = document.getElementById('expand-all');
-
-toggleButton.addEventListener('click', function() {
-  // Toggle the label of the button
-  if (this.innerHTML === 'Expand All') {
-    this.innerHTML = 'Collapse All';
+  if (isExpand) {
+    expandAndCollapse.textContent = 'Collapse All';
+    collapses.forEach(collapsible => {
+      collapsible.style.display = 'flex';
+    });
   } else {
-    this.innerHTML = 'Expand All';
-  }
-
-  // Expand or collapse the content
-  const contentElements = document.querySelectorAll('.content');
-  for (const element of contentElements) {
-    if (element.style.display === 'none') {
-      element.style.display = 'block';
-    } else {
-      element.style.display = 'none';
-    }
+    expandAndCollapse.textContent = 'Expand All';
+    collapses.forEach(collapsible => {
+      collapsible.style.display = 'none';
+    });
   }
 });
 
+
+
+
+
+
+
+
+//popup image
+
+document.getElementById('popup-button').addEventListener('click', function() {
+  var popupImage = document.getElementById('popup-image');
+  if (popupImage.style.display === 'none') {
+    popupImage.style.display = 'block';
+  } else {
+    popupImage.style.display = 'none';
+  }
 });
 
 
 
+//faq section expand all and collapse js
+
+const expandCollapseButton = document.getElementById('expandCollapseButton');
+const collapsibles = document.querySelectorAll('.faq__content-description');
+
+let isExpanded = false;
+
+expandCollapseButton.addEventListener('click', () => {
+  isExpanded = !isExpanded;
+
+  if (isExpanded) {
+    expandCollapseButton.textContent = 'Collapse All';
+    collapsibles.forEach(collapsible => {
+      collapsible.style.display = 'block';
+    });
+  } else {
+    expandCollapseButton.textContent = 'Expand All';
+    collapsibles.forEach(collapsible => {
+      collapsible.style.display = 'none';
+    });
+  }
+});
 
 
+//js for faq accordion
+const faqItems = document.querySelectorAll('.faq__content');
 
+faqItems.forEach(item => {
+  const faqTitle = item.querySelector('.faq__content-heading');
+  const faqContent = item.querySelector('.faq__content-description');
+  faqTitle.addEventListener('click', () => {
+    faqContent.style.display = faqContent.style.display === 'block' ? 'none' : 'block';
+  });
+});
 
 });
+
