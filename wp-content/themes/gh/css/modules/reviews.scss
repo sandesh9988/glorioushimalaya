@@ -1,0 +1,79 @@
+.post__review-comments--line {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(24, 27, 26, 0.1);
+  margin-bottom: 60px;
+  @media #{$tablet} {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__link {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 23px;
+  left: 20%;
+  a {
+    padding: 19px 29px;
+    border: 1px solid $pre-alt;
+    border-radius: 50px;
+    font-family: $primary-family;
+    font-weight: 800;
+    text-transform: uppercase;
+    @include fsz(12px);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: $pre-alt;
+    &:hover {
+      background-color: $pre-alt;
+      color: $white;
+    }
+    @media #{$tablet} {
+      padding: 15px 15px;
+    }
+    @media #{$phone} {
+      padding: 15px 2px;
+      ;
+      @include fsz(10px);
+      text-transform: capitalize;
+    }
+  }
+  @media #{$phone} {
+    left: 0;
+    text-align: center;
+  }
+}
+
+.reviews__toggle {
+    position: relative;
+    left: 30%;
+    margin-bottom: 40px;
+    @media #{$tablet} {
+      margin-bottom: 20px;
+    }
+   
+  button {
+    margin-top: 23px;
+    cursor: pointer;
+    font-family: $primary-family;
+    font-weight: 500;
+    @include fsz(14px);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: $pre-alt;
+
+    &:hover {
+        color: $primary-alt;
+    }
+  }
+  @media #{$phone} {
+    left: 0;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.reviews__more-comments {
+    display: none;
+}

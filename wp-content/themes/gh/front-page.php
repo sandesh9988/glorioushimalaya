@@ -329,6 +329,60 @@ the_post();
 
         </div>
     </section>
+    <section class="fancy">
+        <div class="container">
+            <div class="fancy__heading">
+                <h2 class="fancy__title">Choose Your Travel Style</h2>
+            </div>
+            <div class="fancy__arrow">
+                <svg class="icon icon-icon_arrow-circle-left">
+                    <use xlink:href="#icon-icon_arrow-circle-left"></use>
+                </svg>
+                <svg class="icon icon-icon_arrow-circle-right">
+                    <use xlink:href="#icon-icon_arrow-circle-right"></use>
+                </svg>
+            </div>
+            <div class="fancy__slider">
+
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa4.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Nepal Trekking</h3>
+                    </div>
+                </div>
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                    </div>
+                </div>
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                    </div>
+                </div>
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa1.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Adventure Activities</h3>
+                    </div>
+                </div>
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                    </div>
+                </div>
+                <div class="fancy__media">
+                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg" alt="Image of a trekking" />
+                    <div class="fancy__content">
+                        <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="departure">
         <div class="container">
             <div class="blog__heading">
@@ -368,9 +422,11 @@ the_post();
                             <td>12</td>
                             <td>Booked</td>
                             <td>$1,440.00</td>
-                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>5th October, 2016</td>
@@ -378,9 +434,11 @@ the_post();
                             <td>16</td>
                             <td>Avaliable</td>
                             <td>Upon Request</td>
-                            <td><div class="departure__button"><a href="#" >Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>7th October, 2016</td>
@@ -388,9 +446,11 @@ the_post();
                             <td>17</td>
                             <td>Avaliable</td>
                             <td>$1,440.00</td>
-                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>10th October, 2016</td>
@@ -398,9 +458,11 @@ the_post();
                             <td>13</td>
                             <td>Avaliable</td>
                             <td>$1,440.00</td>
-                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>27th October, 2016</td>
@@ -408,9 +470,11 @@ the_post();
                             <td>12</td>
                             <td>Avaliable</td>
                             <td>$1,440.00</td>
-                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                         <tr class="departure__data-row">
                             <td>3rd December, 2016</td>
@@ -418,9 +482,11 @@ the_post();
                             <td>8</td>
                             <td>Avaliable</td>
                             <td>$1,440.00</td>
-                            <td><div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                            <td>
+                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
                                             <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div></td>
+                                        </svg></a></div>
+                            </td>
                         </tr>
                     </table>
                 </div>

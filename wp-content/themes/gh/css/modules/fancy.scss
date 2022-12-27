@@ -1,0 +1,107 @@
+.fancy {
+  padding-bottom: 40px;
+  position: relative;
+  .container {
+    position: relative;
+  }
+}
+
+.fancy__heading {
+  margin-bottom: 20px;
+  .fancy__title {
+    font-family: $secondary-family;
+    font-weight: 400;
+    @include fsz(40px);
+    line-height: 1;
+    letter-spacing: 0.16px;
+    @media #{$tablet} {
+      @include fsz(32px);
+    }
+    @media #{$phone} {
+      @include fsz(28px);
+    }
+  }
+}
+
+.fancy__slider {
+  width: 100%;
+  position: relative;
+}
+
+.fancy__media {
+  position: relative;
+  width: 285px;
+  height: 450px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    max-width: 100%;
+    height: 180px;
+    top: auto;
+    bottom: 0px;
+    z-index: 12;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      #000000 80.62%
+    );
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+ 
+}
+
+.fancy__content {
+   max-width: 235px;
+   width: 100%;
+  position: absolute;
+  top: auto;
+  bottom: 19px;
+ left: 25px;
+ 
+  z-index: 323;
+  .fancy__subtitle {
+    font-family:$secondary-family;
+    font-weight: 400;
+    @include fsz(26px);
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: $white;
+  }
+}
+
+
+
+.fancy__arrow {
+  width: 98%;
+    position: absolute;
+     z-index: 23;
+     display: flex;
+     left: -2px;
+     justify-content: space-between;
+    top: 50%;
+  
+    .icon {
+        max-width: 50px;
+        width: 100%;
+        height: 50px;
+        
+
+    }
+    .icon-icon_arrow-circle-right {
+      margin-right: -8px;
+    }
+}
+

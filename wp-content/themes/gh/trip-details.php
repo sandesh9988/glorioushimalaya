@@ -93,12 +93,12 @@ the_post();
         <div class="container">
             <div class="tab-bar__row">
                 <ul class="tab-bar__list">
-                    <li><a href="#trip__overview" class="active">Trip Overview</a></li>
-                    <li><a href="#itinerary">Itinerary</a></li>
-                    <li><a href="#include__exclude">Include/Exclude</a></li>
-                    <li><a href="#cost__dates">Cost & Dates</a></li>
-                    <li><a href="#trip__info">Trip Info</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#trip__overview" class="tab-bar__link">Trip Overview</a></li>
+                    <li><a href="#itinerary" class="tab-bar__link">Itinerary</a></li>
+                    <li><a href="#include__exclude" class="tab-bar__link">Include/Exclude</a></li>
+                    <li><a href="#cost__dates" class="tab-bar__link">Cost & Dates</a></li>
+                    <li><a href="#trip__info" class="tab-bar__link">Trip Info</a></li>
+                    <li><a href="#reviews" class="tab-bar__link">Reviews</a></li>
                 </ul>
             </div>
         </div>
@@ -2764,12 +2764,116 @@ the_post();
                     </figure>
 
                 </div>
-                <div class="post__review-comments">
+                <div class="post__review-comments post__review-comments--line">
                     <p>I and my girlfriend were looking for a budget-friendly and short EBC trek and we found this
                         12 days Everest base camp trek with Glorious Himalaya.<br> We wanted to book only EBC trek
                         with a guide, porter, flights and accommodations and they organized it accordingly. We are
                         very satisfied with their guide and porter service.<br> Thank you for organizing our 12 days
                         EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br>Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__link">
+                <a href="#">Share your experience and story with the world</a>
+            </div>
+            <div class="reviews__toggle">
+                <button id="reviewsToggle">Load More Reviews(30)</button>
+            </div>
+            <div class="reviews__more-comments">
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
+                        this trek from 4th to 15th December 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
+                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
                         this trek from 4th to 15th December 2022.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">

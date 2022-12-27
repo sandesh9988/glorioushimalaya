@@ -153,7 +153,7 @@
 //post review comments part
 
 .post__review-title {
-  margin-top: 100px;
+  
   width: 100%;
   display: flex;
   align-items: center;
@@ -164,9 +164,7 @@
   color: $black-dark;
   margin-bottom: 16px;
 
-  @media #{$header} {
-   margin-top: 30px;
-    }
+  
   .post__review-line {
     width: 18%;
     border: none;
@@ -234,6 +232,7 @@
 .post__stick-wrapper {
     position: relative;
     width: 100%;
+    margin-bottom: 100px;
     @media #{$header} {
        display: flex;
        flex: 1;
