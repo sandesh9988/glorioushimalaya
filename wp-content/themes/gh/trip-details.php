@@ -1576,28 +1576,169 @@ the_post();
             </div>
             <div class="trip-list__icon-bar">
                 <div class="trip-list__link">
-                    <button id="popup-button"><svg class="icon icon-gallery">
+                    <a href="<?php echo get_template_directory_uri(); ?>/uploads/popup.jpg" data-fancybox><svg
+                            class="icon icon-gallery">
                             <use xlink:href="#icon-gallery"></use>
-                        </svg> Gallery</button>
-                    <figure class="trip-list__media" id="popup-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/popup.jpg"
+                        </svg> Gallery
+                        <img class="screen-reader-text"
+                            src="<?php echo get_template_directory_uri(); ?>/uploads/popup.jpg"
                             alt="Image of a trekking" />
-                    </figure>
+                    </a>
                 </div>
+
                 <div class="trip-list__link">
-                    <button><svg class="icon icon-menu-bar">
+                    <a href="#popup" data-fancybox> <svg class="icon icon-menu-bar">
                             <use xlink:href="#icon-menu-bar"></use>
-                        </svg> Checklist</button>
+                        </svg> Checklist</a>
+
+                    <div class="trip-list__popup-content" id="popup">
+                        <h3 class="trip-list__content-title">Checklist</h3>
+                        <div class="trip-list__content-link">
+                            <a href="javascript:window.print()"><svg class="icon icon-printer">
+                                    <use xlink:href="#icon-printer"></use>
+                                </svg>
+                                Print
+                            </a>
+                        </div>
+                        <div class="entry-content">
+                            <h4><strong>Gear Checklist for EBC Trek</strong></h4>
+                            <h5><strong>Head</strong></h5>
+                            <ul>
+                                <li>Bandana or headscarf, also useful for dusty conditions.</li>
+                                <li>Warm hat that covers your ears (wool or synthetic)</li>
+                                <li>Headlamp with extra batteries and bulbs.</li>
+                                <li>Sunglasses with UV protection</li>
+                                <li>Prescription sunglasses (if required)</li>
+                            </ul>
+                            <h5><strong>Upper Body</strong></h5>
+                            <ul>
+                                <li>Polypropylene shirts (1 half sleeve and 2 long sleeves)</li>
+                                <li>Light and expedition weight thermal tops.</li>
+                                <li>Fleece wind-stopper jacket or pullover.</li>
+                                <li>Waterproof shell jacket (preferably breathable fabric)</li>
+                                <li>Down jacket</li>
+                                <li>Gore-Tex jacket with hood, waterproof and breathable</li>
+
+                            </ul>
+                            <h5><strong>Hands</strong></h5>
+                            <ul>
+                                <li>1 pair of lightweight poly-liner gloves.</li>
+                                <li>1 pair of lightweight wool of fleece gloves.</li>
+                                <li>1 pair of mittens, consists of 1 Gore-Tex over mitt matched with a very warm
+                                    polar-fleece mitt liner (seasonal)</li>
+
+
+                            </ul>
+                            <h5><strong>Lower Body</strong></h5>
+                            <ul>
+                                <li>Non-cotton underwear briefs.</li>
+                                <li>1 pair of hiking shorts.</li>
+                                <li>1 pair of lightweight thermal bottoms (seasonal)</li>
+                                <li>1 pair of fleece or woolen trousers</li>
+                                <li>1 pair of waterproof shell pants, breathable fabric</li>
+
+
+                            </ul>
+                            <h5><strong>Feet</strong></h5>
+                            <ul>
+                                <li>2 pairs of thin, lightweight inner socks.</li>
+                                <li>2 pairs of heavy poly or wool socks.</li>
+                                <li>1 pair of hiking boots with spare laces (sturdy, soles, water resistant, ankle
+                                    support, “broken in”)</li>
+                                <li>1 pair of trainer or running shoes/sandals</li>
+                                <li>Cotton socks (optional)</li>
+                                <li>Gaiters (winter only), optional, “low” ankle high version</li>
+
+                            </ul>
+                            <h5><strong>Sleeping</strong></h5>
+                            <ul>
+                                <li>1 sleeping bag (-20 degrees)</li>
+                                <li>Fleece sleeping bag liner (optional)</li>
+
+                            </ul>
+                            <h5>Rucksack and Travel Bags</h5>
+                            <ul>
+                                <li>1 medium rucksack (50-70 liters/3000-4500 cubic inches, can be used for an airplane
+                                    carryon)</li>
+                                <li>1 large duffel bag</li>
+                                <li>A small daypack/backpack for carrying your valuables should have good shoulder
+                                    padding</li>
+                                <li>Small padlocks for duffel-kit bags</li>
+                                <li>2 large waterproof rucksack covers (optional)</li>
+
+                            </ul>
+                            <h5><strong>Medical</strong></h5>
+                            <ul>
+                                <li>Small, personal first-aid kit. (Simple and light)</li>
+                                <li>Aspirin, first-aid tape, and plasters (Band-Aids)</li>
+                                <li>1 skin-blister repair kit</li>
+                                <li>Anti-diarrhea pills</li>
+                                <li>Anti-headache pills</li>
+                                <li>Cough and/or cold medicine</li>
+                                <li>Anti-altitude sickness pills: Diamox or Acetylzolamide</li>
+                                <li>Stomach antibiotic: Ciprofloxacin, etc. Do not bring sleeping pills as they are a
+                                    respiratory depressant.</li>
+                                <li>Water purification tablets or water filter.</li>
+                                <li>1 set of earplugs</li>
+                                <li>Extra pair of prescription glasses, contact lens supplies.</li>
+                            </ul>
+                            <h5><strong>Practical Items</strong></h5>
+                            <ul>
+                                <li>1 small roll of repair tape, 1 sewing-repair kit</li>
+                                <li>1 cigarette lighters, 1 small box of matches</li>
+                                <li>1 compass or GPS (optional)</li>
+                                <li>1 alarm clock/watch</li>
+                                <li>1 digital camera with extra cards and batteries</li>
+                                <li>Large Ziplocs</li>
+                                <li>2 water bottles (1 ltrs. each)</li>
+                                <li>1 small folding knife</li>
+                                <li>Binoculars (optional)</li>
+                                <li>4 large, waterproof, disposable rubbish sacks.</li>
+                            </ul>
+                            <h5><strong>Toiletries</strong></h5>
+                            <ul>
+                                <li>1 medium-sized quick-drying towel</li>
+                                <li>Toothbrush/paste (preferably biodegradable)</li>
+                                <li>Multi-purpose soap (preferably biodegradable)</li>
+                                <li>Deodorants</li>
+                                <li>Nail clippers</li>
+                                <li>Face and body moisturizer</li>
+                                <li>Female hygiene products</li>
+                                <li>Small mirror</li>
+                            </ul>
+                            <h5><strong>Personal Hygiene</strong></h5>
+                            <ul>
+                                <li>Wet wipes (baby wipes)</li>
+                                <li>Tissue/toilet roll</li>
+                                <li>Anti-bacterial hand wash</li>
+                               
+                            </ul>
+                            <h5><strong>Extras/Luxuries</strong></h5>
+                            <ul>
+                                <li>Reading books</li>
+                                <li>Trail map/guide book</li>
+                                <li>Journal and pen</li>
+                                <li>iPod</li>
+                                <li>Travel game i.e. chess, backgammon, scrabble, playing cards (to help you pass the time at teahouses or camps)</li>
+                               <li>1 modest swimsuit</li>
+                               <li>Voltage converter</li>
+                               <li>Plug adapter (2 round pegs to 2 flat pegs)</li>
+                               <li>Lightweight pillowcase (in case if your teahouses do not provide you)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="trip-list__link">
-                    <button><svg class="icon icon-gallery">
-                            <use xlink:href="#icon-gallery"></use>
-                        </svg> Videos</button>
+                    <a href="https://youtu.be/GV1huCrnGPQ" data-fancybox><svg class="icon icon-video1">
+                            <use xlink:href="#icon-video1"></use>
+                        </svg> Videos</a>
                 </div>
                 <div class="trip-list__link">
-                    <button><svg class="icon icon-map">
+                    <a data-type="iframe"
+                        href="https://www.google.com/maps/d/u/0/embed?mid=1Jnu69JCdyhgxgi3pxCQtKBJNYA9j7vk&ehbc=2E312F"
+                        data-fancybox><svg class="icon icon-map">
                             <use xlink:href="#icon-map"></use>
-                        </svg> Route Map</button>
+                        </svg> Route Map</a>
                 </div>
             </div>
         </div>
@@ -2780,15 +2921,15 @@ the_post();
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>Base camp arrival was the best and first look of Everest! For future climbers a kind reminder
+                        that it is not easy and if it were easy everybody could do it. 🙂 As a sidenote, if you try to
+                        send post cards ask about buying post stamps upfront. Overall experience is fascinating.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr1.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Dadusan<br></strong> Croatia</p>
                     </div>
                 </div>
             </div>
@@ -2800,87 +2941,439 @@ the_post();
             </div>
             <div class="reviews__more-comments">
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>“It was my first time in Nepal having the Himalayan experience. My husband and I were planning to
+                        spend our holiday in Nepal for a long time, and also it was my longtime dream to trek to
+                        Himalaya and be in the mountains. We then finally decided to venture for both Gokyo and Everest
+                        Base Camp which later turned into a lifetime experience for us. Having completed this trek
+                        successfully with the help of the Glorious Himalaya Team, we had luck with the weather and
+                        everything went as per the plan. Despite the cold weather and physical challenges, we made it
+                        with the help of porters and our guide Roshan. We enjoyed every moment in the mountains and
+                        would like to thank the entire team of Glorious Himalaya for excellently organizing this trip
+                        for us. We will definitely be back to Nepal with our children shortly and recommend this trek to
+                        everyone!!!”</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr2.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Sofie<br></strong> Denmark</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>Before we book this trip with Glorious Himalaya, we were in trouble choosing the best and most
+                        reliable local agency amongst the hundreds of tour companies in Nepal. And finally, we decided
+                        to go Everest base camp trek with this agency after we researched in many ways. Their instant
+                        response, reasonable price, a fair and ethical policy for looking after the porters and guides
+                        impressed us to book with them.<br>
+
+                        From the arrival to departure they managed all our hotel bookings, transfers and meals during
+                        our Nepal stay.<br>
+
+                        We had good times in the mountains during the trek. We did 12 days Everest base camp trek and 1
+                        day sightseeing tour in Kathmandu. Our trekking guide Suman was exceptional and
+                        well-experienced. Though the weather was not clear at Kalapather however overall trip was great
+                        and well organized. Thanks to our porters’ shiva, raju and dal. Without your support, it would
+                        not have been possible.<br>
+
+                        We are happy to recommend your agency to adventure seekers who are planning to visit Nepal for
+                        their holiday. Please go with this agency and we are sure you won’t be disappointed.<br>
+
+                        Best regards from,<br>
+
+                        Sean, Jordan, Michelle, Albert, Emma and Olivia</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr3.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Sean Paul<br></strong> United States</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>It was an awesome Everest base camp trek in the month of December with the Glorious Himalaya. It
+                        was a bit cold in the month of December but the views were crystal clear and the flow of
+                        tourists was low. We couldn’t imagine the sunrise view from the Kalapather that we had
+                        experienced on this trek. If you are going on this trip don’t miss it.<br>
+
+                        Due to our limited time, we spent only 2 nights in Namche bazaar for acclimatization. After
+                        Namche, we continued the hike to Base camp without acclimatizing in Dingboche. Normally,
+                        trekkers stay two nights at Dingboche for better acclimatization but we skipped it due to our
+                        short holiday time.<br>
+
+                        Our guide Siva was superb and porter Anis was superhuman. Even at the high altitude, he carried
+                        our belongings easily. Hats up to your hard work man. Through this review, we would like to
+                        suggest all the trekkers who are hiring guides and porters, please make them happy by giving
+                        some tips at the end of the trek in Lukla as they work very hard in the high altitudes to make
+                        your trip successful.<br>
+
+                        In the end, we would like to thank Ganesh, who managed our EBC trek including our flights,
+                        accommodations, meals, guide and porter.
+
+                        Good luck team and will visit Nepal again with your agency.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr4.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Henry And Suzane<br></strong> France</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>I am a solo traveler from Germany and did the Everest Base Camp trek in December 2019 with GHT.
+                        From my arrival to the departure, everything was well planned and organized. Could not ask for
+                        more. Thanks to the entire team from GHT. Wouldn’t have been possible without them!</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr5.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Jake Muller<br></strong> Germany</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>Excellent porters and guide. especially Budi. I will recommend you to my friend.
+                        everything was very well organized.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr6.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Kemal P<br></strong> Croatia</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>The trek went wonderfully and Ganesh went above and beyond to make sure I was having the best
+                        time and worked tirelessly to ensure I could get to and back from Lukla effortlessly! Loved it!
+                    </p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr7.jpeg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Nathan H<br></strong> Australia</p>
                     </div>
                 </div>
                 <div class="post__review-comments post__review-comments--line">
-                    <p>We are very satisfied with their guide and porter service.<br> Thank you for organizing our 12
-                        days EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br> Did
-                        this trek from 4th to 15th December 2022.</p>
+                    <p>We were on Everest base camp trekking from 15.-30.04.2022. organized by the Gloroius Himalaya
+                        agency, the group consisted of 14 mountaineers, the guides were Bisal and Buddi … everything was
+                        perfectly organized, the guides were excellent and professional, all the recommendations and
+                        praise.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
-                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/profile2.png"
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr8.jpg"
                                 alt="Image of a trekking" />
                         </figure>
-                        <p><strong>By Monalisa and Jevin<br></strong> United Kingdom</p>
+                        <p><strong>By Renato Milovski<br></strong> Croatia</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>The trekking has shown us wonderful natural environment, interesting places, people and culture,
+                        as well as demanding physical challenge. The organization was excellent, and our guides Buddhi
+                        and Bishal have shown competence, friendliness and a lot of motivation. Some of us had to return
+                        eariler due to problems with altitude, and team did everything to organize return, welcome us in
+                        Kathmandu and show us many interesting places there. Thanks for everything!</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr9.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Sven<br></strong> Croatia</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>🙌 Everest Base Camp Trekking was amazing, would recommend it to everyone. Buddy and Bishal are
+                        the best guides !!<br>
+
+                        Thank you to all Sherpas!</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr10.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Josip E<br></strong> Croatia</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>I found Glorious to be one of the most comprehensive companies when prepping you from the Everest
+                        base camp trek.
+
+                        The package actually covers you from start to finish once you land in Kathmandu and fly out for
+                        there.<br>
+
+                        My guide Roshan made the effort to fulfil every single request that I have thrown to him, it’s
+                        not easy but he tries his best to ensure that I have the best experience possible and making
+                        this trip a dream come through, I’ll definitely look at glorious again If I am ever looking to
+                        do this again!</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr11.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By SengAnn G<br></strong> Singapore</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We enjoyed a great trekking experience in the Khumbu valley last October. Our trek was well
+                        organized by the Glorious Himalaya Trekking agency: plane tickets to/from Lukla, friendly guide
+                        and porters, good choice of lodges. Great thanks to you all 🙏</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr12.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Alain Beriner<br></strong> France</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>Again a great trip to the most beautiful spot on earth! Excellent organization and the best
+                        guide/porter I could have. Will definitely try to come back in 2022.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr3.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Villa D<br></strong> Poland</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We wanted to do a shortened Everest Base Camp trek with our family (two kids of 13 and 9 years).
+                        We choose Glorious Himalaya Agency without knowing them before. We were not disappointed, on
+                        contrary, but impressed. Everything worked on time and as planned. The staff was friendly and
+                        extremely professional and helpful. Exceptional porters and guides, too. Next trekking? Only
+                        with them!</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr13.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Stefan<br></strong> Switzerland</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>We recently did 12 days Everest base camp trek through the Glorious Himalaya team. The views and
+                        scenery were amazing throughout the trek.<br>
+
+                        In the first part, we were stuck in Kathmandu for 2 days due to the foggy and windy weather. On
+                        the 3rd day, we succeeded to fly to Lukla from where our trek begins. We trek via Phakding –
+                        Namche Bazar – Tengboche – Dingboche – Gorakshep and then to Everest Base camp, which is the
+                        main destination of our trip. The final hike from Gorakshep to Kalapather was a bit difficult
+                        and exhausting but the views were magnificent once we reached the top – 5555 meters above sea
+                        level. Even more, were stunned by the sunrise views.<br>
+
+                        Overall, our trip was amazing and worth every penny.
+                        In the end, we would like to thanks all the trekking staff of Glorious Himalaya. Due to their
+                        assistance, we were able to complete this trek without any difficulties. Hence, we strongly
+                        recommend GHT team for any kind of Nepal tour. They are a highly experienced, reliable, and
+                        trustworthy company in Nepal.</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr14.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Kamal D<br></strong> Bhutan</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“I was on a trek on a group of 6 with Buddhi. He is a dynamic, energetic, and supportive guide.
+                        He always kept us motivated, continuously interacting with us on our health and conditions to
+                        make sure that we are coping well with the height. He was regularly asking if there are ways to
+                        make ourselves more comfortable. His abundance of experience as a trekking guide really made our
+                        trek easier. I highly recommend Buddhi and thank all the team members of Glorious for organizing
+                        the amazing experience we had on the EBC trek.”</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr15.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Leon Steiner<br></strong> Austria</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“Everest was phenomenal !!! Even if we did not had luck with the weather, we still enjoyed the
+                        trip. Bishal was the greatest guide in Nepal. He wouldn’t leave my side even though I was hours
+                        behind the main party. He even braved rafting the Trisuli River with us althoudh he did mention
+                        he would NEVER go rafting again. (doesn’t like getting tossed around and overboard on our raft)”
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr16.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Leon Steiner<br></strong> Austria</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“I was on a trek on a group of 6 with Buddhi. He is a dynamic, energetic, and supportive guide.
+                        He always kept us motivated, continuously interacting with us on our health and conditions to
+                        make sure that we are coping well with the height. He was regularly asking if there are ways to
+                        make ourselves more comfortable. His abundance of experience as a trekking guide really made our
+                        trek easier. I highly recommend Buddhi and thank all the team members of Glorious for organizing
+                        the amazing experience we had on the EBC trek.”</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr17.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Jenny<br></strong> Canada</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“The trek experience with this company was amazing! Ganesh made everything possible within 2 days
+                        of booking including a good briefing answering all the relevant questions!
+                        The guide Dakman and Porter Kumal were very helpful and knowledgeable about the mountains,
+                        granting me the best experience possible for EBC. I definitely recommend booking via this
+                        company!”</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr18.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Maximilan<br></strong> Germany</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>““Glorious Himalaya gave us a competitive package and excellent service right from the first
+                        contact over email. Ganesh, who runs the company is very punctual, proficient, welcoming and has
+                        an excellent team. His expertise and guidance on the EBC trek supported us to finalize this
+                        grand trek in a remarkably short time.<br>
+
+                        The guide (Buddhi), porters and all the combinations throughout our trek were great. Buddhi was
+                        very humble and even played football with my young boys. He made sure we are happy and
+                        comfortable. The hotels and lodges arranged by Ganesh/Buddhi throughout the whole trek (Namche
+                        Bazar, Tengboche, Lukla) were really comfortable, well placed, neat and tidy with the delicacy
+                        of meals and service.<br>
+
+                        I would highly recommend Glorious Himalaya for trekking in Nepal.<strong>”AMAZING COMPANY WITH
+                            EXCELLENT
+                            SERVICE AND FLEXIBILITY</strong></p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr19.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Amelie Chevrolet<br></strong> France</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“Wonderfully Organized Ganesh and His Team!!!
+                        Everything was very professional and perfectly planned.
+                        It felt like more of a journey than a trip.<br>
+
+                        Our Local Guide Dakman knew much more than the rest of the guides and explained to us everything
+                        that we saw while on the trek. It was interesting that he knew every hotel and lodge owner. We
+                        couldn’t have completed this trip without his knowledge, experience, and guidance was perfect.
+                        He was continually asking about our health and comfort for the 12 days. With the fantastic
+                        guidance and care of Dakman, our amazing group of 9 reached EBC with only minimal effects from
+                        the altitude.<br>
+
+                        In General, I considered our Guide, Porters and Company was very professional and well
+                        experienced, responsible and caring all the way.<br>
+
+                        Thank you to Glorious, Dakman and all the Porters for a remarkable trip!”</p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr20.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Arnellie<br></strong> United Kingdom</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>I have on this Nepal trip with Glorious Himalaya Trekking team twice. This season (May 2014), I
+                        did Everest base camp trek with my family (Father / Husband / Son / Daughter) and it was a
+                        brilliant trip for us with the assist of GHT member. From our arrival in Kathmandu airport to
+                        the departure dates, company members take all the responsibility very well and we really like
+                        their way of traditionally welcome to the guest by “Namastee”.<br>
+
+                        Guide of this company is very experienced, skilled, knowledgeable and have ability to handle the
+                        critical situations. During this trip my father had some food poison problem but he get well
+                        with in two days because of our Guide “Chandra” guidance. He knows very well about the food
+                        poison treatment which is one of the most important part of the Himalayan guide. And our porters
+                        Ram and Guru was very helpful and smiley faces and friendly as well. We had lots of memorable
+                        moments during this trip with my family.<br>
+
+                        Well, me and my family members do not have hesitation to recommend this trekking company for
+                        your adventure holidays to my friends, relatives and the adventure travelers. And I can’t wait
+                        to organize my next trip with this company in near future.
+
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr21.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Lucia's Family<br></strong> Mexico City</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“It was such a memorable moment in our life. Everest base camp trek offers not only the views of
+                        giant mountains, but it also gives a chance to explore the culture of the Sherpa community,
+                        valleys and the remoteness of Khumbu region.”
+
+
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr22.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Christina Perry<br></strong> Australia</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“We successfully completed EBC Trek last October with the help of Ganesh and His Team.
+                        The thrilling flight to Lukla was an adventure in itself.
+                        The trek was challenging but rewarding in every way.
+                        Standing on the lap of Everest was the most exciting and unique experience we’ve ever had.
+
+                        Everything was well organized and the service could not have been better.
+                        We can’t ask for more but only to thank them for our successful trip.
+                        Thanks to our Guide, Porters, and the entire team for helping us complete this trek.
+                        Our guide Ram was very professional, well informed and explained to us very well.
+                        Accommodation and meals were very appreciated.
+
+                        We carried wonderful memories flying back home and still miss the mountains!!!
+                        See you on our more future trips to Nepal. I would definitely recommend this once in a lifetime
+                        trek to Everyone. Thank you! Ganesh and his team for organizing this trip”
+
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr23.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Ruben<br></strong> Holland</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>Ktm-Lukla-Gokyo-Kalapathar-Base Camp-Lukla-Ktm. I did the typical tourists up hits at the famous
+                        Mt. Everest Trek in Solokhumbhu. The trek was scheduled for 17 days but we completed the trek in
+                        15, because of good weather. It was really fun and exhausting at the same time. The highlight
+                        was not the Base Camp but the Chola Pass. (Bhes, my Guide was right saying that Base Camp is not
+                        worth visiting and Chola is the best) Bhes is a very experienced guide and a very friendly
+                        person. He actually made this trip a unique experience not only in terms of sportive action but
+                        also in cultural exchange. Thank you very much for this experience.
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr24.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Karther<br></strong> Germany</p>
+                    </div>
+                </div>
+                <div class="post__review-comments post__review-comments--line">
+                    <p>“We really enjoyed our EBC trip which was our unforgettable moments in our life. Full of
+                        adventure, majestic mountain views, valleys and landscapes.”
+
+
+                    </p>
+                    <div class="post__profile">
+                        <figure class="post__profile-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr26.jpeg"
+                                alt="Image of a trekking" />
+                        </figure>
+                        <p><strong>By Kimber Alex<br></strong> Canada</p>
                     </div>
                 </div>
             </div>

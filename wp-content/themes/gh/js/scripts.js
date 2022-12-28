@@ -152,10 +152,11 @@ $(function () {
     nextArrow: ".icon-icon-left-arrow",
     prevArrow: ".icon-icon-right-arrow",
   });
+//slider for fancy section
 
   $('.fancy__slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,
@@ -313,7 +314,10 @@ $(function () {
     });
   });
 
-  //slider for fancy section
+  //fancy bar
+
+
+
 
 });
 

@@ -30,7 +30,7 @@ border-radius: 4px;
     &:last-child {
         border-right: none;
     }
-   button {
+   a {
       font-family: $primary-family;
       font-weight: 700;
       @include fsz(16px);
@@ -73,18 +73,55 @@ border-radius: 4px;
 }
 
 
-.trip-list__media {
+.trip-list__popup-content {
   display: none;
-  max-width: 650px;
-  height: 488px;
+  max-width: 800px;
+  margin: 40px auto;
+  height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0 ;
+  .trip-list__content-title {
+    
+    font-family: $secondary-family;
+    @include fsz(38px);
+    line-height: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+
+}
+
+.trip-list__content-link {
+  width: 100%;
+  text-align: right;
   
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  margin-left: auto;
+  a {
+    
+    font-family: $primary-family;
+    @include fsz(20px);
+    line-height: 1;
+    color: $white;
+    background-color: $tertiary-alt;
+    padding: 15px 30px;
+    border-radius: 20px;
+   
+    .icon{
+      
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      color: $tertiary-alt;
+      background-color: $white;
+      border: 1px solid $tertiary-alt;
+
+      .icon {
+        fill: $tertiary-alt;
+      }
+    }
   }
 }
