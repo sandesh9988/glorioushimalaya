@@ -235,18 +235,7 @@ $(function () {
     }
   });
 
-  //popup image
-
-  document
-    .getElementById("popup-button")
-    .addEventListener("click", function () {
-      var popupImage = document.getElementById("popup-image");
-      if (popupImage.style.display === "none") {
-        popupImage.style.display = "block";
-      } else {
-        popupImage.style.display = "none";
-      }
-    });
+  
 
   //faq section expand all and collapse js
 
@@ -305,16 +294,6 @@ $(function () {
       });
     }
   });
-
-  //active class of nav bar
-
-  $(document).ready(function () {
-    $(".tab-bar__link").click(function () {
-      $(this).toggleClass("active");
-    });
-  });
-
-  //fancy bar
 
 
 
