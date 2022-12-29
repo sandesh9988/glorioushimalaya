@@ -93,8 +93,8 @@ the_post();
         <div class="container">
             <div class="tab-bar__row">
                 <ul class="tab-bar__list">
-                    <li><a href="#trip__overview" class="tab-bar__link">Trip Overview</a></li>
-                    <li><a href="#itinerary" class="tab-bar__link">Itinerary</a></li>
+                    <li><a href="#trip__overview" class="tab-bar__link ">Trip Overview</a></li>
+                    <li><a href="#itinerary" class="tab-bar__link ">Itinerary</a></li>
                     <li><a href="#include__exclude" class="tab-bar__link">Include/Exclude</a></li>
                     <li><a href="#cost__dates" class="tab-bar__link">Cost & Dates</a></li>
                     <li><a href="#trip__info" class="tab-bar__link">Trip Info</a></li>
@@ -1711,7 +1711,7 @@ the_post();
                                 <li>Wet wipes (baby wipes)</li>
                                 <li>Tissue/toilet roll</li>
                                 <li>Anti-bacterial hand wash</li>
-                               
+
                             </ul>
                             <h5><strong>Extras/Luxuries</strong></h5>
                             <ul>
@@ -1719,11 +1719,12 @@ the_post();
                                 <li>Trail map/guide book</li>
                                 <li>Journal and pen</li>
                                 <li>iPod</li>
-                                <li>Travel game i.e. chess, backgammon, scrabble, playing cards (to help you pass the time at teahouses or camps)</li>
-                               <li>1 modest swimsuit</li>
-                               <li>Voltage converter</li>
-                               <li>Plug adapter (2 round pegs to 2 flat pegs)</li>
-                               <li>Lightweight pillowcase (in case if your teahouses do not provide you)</li>
+                                <li>Travel game i.e. chess, backgammon, scrabble, playing cards (to help you pass the
+                                    time at teahouses or camps)</li>
+                                <li>1 modest swimsuit</li>
+                                <li>Voltage converter</li>
+                                <li>Plug adapter (2 round pegs to 2 flat pegs)</li>
+                                <li>Lightweight pillowcase (in case if your teahouses do not provide you)</li>
                             </ul>
                         </div>
                     </div>
@@ -2934,7 +2935,49 @@ the_post();
                 </div>
             </div>
             <div class="reviews__link">
-                <a href="#">Share your experience and story with the world</a>
+                <button id="reviewsAccordion">Share your experience and story with the world</button>
+                <div class="reviews__link-form">
+                    <form action="/action_page.php">
+                        <div class="reviews__link-field">
+                            <label for="fname">Your Full Name:</label>
+                            <input type="text" id="fname" name="fname" value="John Depp">
+                        </div>
+                        <div class="reviews__link-field">
+                            <label for="email">Your Email Address:</label>
+                            <input type="email" id="email" name="email" value="john@gmail.com">
+                        </div>
+                        <div class="reviews__link-field">
+                            <label for="country">Your Country:</label>
+                            <input type="country" id="country" name="country" value="United States">
+                        </div>
+                        <div class="reviews__link-field">
+                            <label for="review">Review Title:</label>
+                            <input type="review" id="review" name="review" value="Best Trekking">
+                        </div>
+                        <div class="reviews__link-field">
+                            <label for="review">Overall Rating:</label>
+                            <div class="reviews__rating">
+
+                                <input type="radio" name="rating" id="rating-4" value="4">
+                                <label for="rating-4"></label>
+                                <input type="radio" name="rating" id="rating-3" value="3">
+                                <label for="rating-3"></label>
+                                <input type="radio" name="rating" id="rating-2" value="2">
+                                <label for="rating-2"></label>
+                                <input type="radio" name="rating" id="rating-1" value="1">
+                                <label for="rating-1"></label>
+                                <input type="radio" name="rating" id="rating-5" value="5">
+                                <label for="rating-5"></label>
+                            </div>
+                        </div>
+                        <div class="reviews__link-field reviews__link-field--column">
+                            <label for="text">Review Experience</label>
+                            <textarea name="comment" form="usrform"></textarea>
+                        </div>
+                        
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+                </div>
             </div>
             <div class="reviews__toggle">
                 <button id="reviewsToggle">Load More Reviews(30)</button>
@@ -3243,9 +3286,9 @@ the_post();
                         Bazar, Tengboche, Lukla) were really comfortable, well placed, neat and tidy with the delicacy
                         of meals and service.<br>
 
-                        I would highly recommend Glorious Himalaya for trekking in Nepal.<strong>”AMAZING COMPANY WITH
-                            EXCELLENT
-                            SERVICE AND FLEXIBILITY</strong></p>
+                        I would highly recommend Glorious Himalaya for trekking in Nepal.<br>”AMAZING COMPANY WITH
+                        EXCELLENT
+                        SERVICE AND FLEXIBILITY</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
                             <img src="<?php echo get_template_directory_uri(); ?>/uploads/rr19.jpeg"

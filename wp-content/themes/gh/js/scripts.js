@@ -235,7 +235,6 @@ $(function () {
     }
   });
 
-  
 
   //faq section expand all and collapse js
 
@@ -288,13 +287,30 @@ $(function () {
         collapsible.style.display = "none";
       });
     } else {
-      reviewsToggle.textContent = "Load Less Reviews(30)";
+      reviewsToggle.textContent = "Load Less Reviews";
       show.forEach((collapsible) => {
         collapsible.style.display = "block";
       });
     }
   });
 
+//rating 
+
+document.querySelector('#rating-3').addEventListener('click', () => {
+  document.querySelector('#rating-3').checked = true;
+});
+
+//rating accordion
+const reviewsItems = document.querySelectorAll(".reviews__link");
+
+  reviewsItems.forEach((item) => {
+    const reviewsTitle = item.querySelector("#reviewsAccordion");
+    const reviewsContent = item.querySelector(".reviews__link-form");
+    reviewsTitle.addEventListener("click", () => {
+      reviewsContent.style.display =
+        reviewsContent.style.display === "block" ? "none" : "block";
+    });
+  });
 
 
 
