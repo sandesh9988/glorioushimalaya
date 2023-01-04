@@ -21,19 +21,22 @@ the_post();
                 <use xlink:href="#icon-icon-right-arrow"></use>
             </svg>
         </div>
+        
         <div class="hero__slider">
+        
             <figure class="hero__media">
-                <img src="<?php echo get_template_directory_uri(); ?>/uploads/heroSection.jpg"
+                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg"
                     alt="Image of a trekking" />
             </figure>
-            <figure class="hero__media">
-                <img src="<?php echo get_template_directory_uri(); ?>/uploads/hero.jpg" alt="Image of a trekking" />
+            <figure class="hero__media" >
+                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg" alt="Image of a trekking" />
             </figure>
             <figure class="hero__media">
-                <img src="<?php echo get_template_directory_uri(); ?>/uploads/heroSection.jpg"
+                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg"
                     alt="Image of a trekking" />
             </figure>
         </div>
+       
 
 
     </section>
@@ -128,10 +131,12 @@ the_post();
 
         </div>
     </section>
+
+  <!-- dynamic content -->
     <section class="grid-content">
         <div class="container">
 
-            <h2 class="grid-content__title">Our Best Sellers</h2>
+            <h2 class="grid-content__title"><?php echo get_field('selling_trips_title')?></h2>
             <div class="grid-content-wrapper">
                 <div class="grid-content__row">
                     <figure class="grid-content__media">
@@ -332,7 +337,7 @@ the_post();
     <section class="fancy">
         <div class="container">
             <div class="fancy__heading">
-                <h2 class="fancy__title">Choose Your Travel Style</h2>
+                <h2 class="fancy__title"><?php echo get_field('travel_styles_title')?></h2>
             </div>
             <div class="fancy__arrow">
                 <svg class="icon icon-icon_arrow-circle-left">

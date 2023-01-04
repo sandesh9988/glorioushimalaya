@@ -1,6 +1,5 @@
 .header {
   background-color: $primary;
-  padding-top: 22px;
   position: relative;
 }
 
@@ -8,30 +7,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media #{$header} {
-    padding: 0;
-    align-items: flex-start;
-  }
-
-  .header__logo {
-    padding: 3px 0 25px;
-    @media #{$header} {
-      padding-bottom: 10px;
-    }
+  padding: 22px 15px 23px;
+  @media #{$tablet} {
+    padding: 10px 0px;
   }
 }
 
 .logo__wrap {
   max-width: 198px;
   width: 100%;
-  height: 50px;
-  @media only screen and (max-width: 650px) {
-    margin-right: 20px;
-  }
+
+  padding: 3px 0 2px;
   .header__logo-image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -41,179 +30,184 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-family: $primary-family;
-  font-weight: 500;
-  @include fsz(12px);
-  line-height: 1.1;
-  text-align: right;
-  color: $white;
-
+  flex-direction: row;
   @media #{$header} {
-    align-items: flex-end;
+    justify-content: flex-end;
   }
-  @media only screen and (max-width: 810px) {
-    max-width: 100%;
+  @media #{$tablet} {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 8px;
+  }
+  @media only screen and (max-width: 400px) {
+    flex-direction: row;
     align-items: center;
-    margin-left: 26px;
+    gap: 0px;
   }
 
-  @media only screen and (max-width: 460px) {
-    flex-direction: column;
-    align-items: center;
-  }
   a {
     font-weight: 700;
     @include fsz(18px);
-    line-height: 1.2;
+    line-height: 1.22;
     text-align: right;
     color: $white;
     @media #{$header} {
-      @include fsz(15px);
+      @include fsz(16px);
     }
-    @media only screen and (max-width: 460px) {
-      @include fsz(13px);
+    @media #{$tablet} {
+      @include fsz(0px);
     }
-
     &:hover {
       color: $alt;
+      .icon {
+        fill: $alt;
+      }
     }
   }
-  @media only screen and (max-width: 460px) {
-    @include fsz(10px);
-  }
-
   .header__info-wrapper {
-    display: flex;
-    width: 100%;
-
-    @media only screen and (max-width: 650px) {
-      align-items: center;
-      margin-bottom: 4px;
+    @media #{$header} {
+      margin-right: 15px;
     }
   }
   .header__contact {
-    max-width: 224px;
-    width: 100%;
+    font-family: $primary-family;
+    font-weight: 500;
+    @include fsz(12px);
+    text-align: right;
+    color: $white;
     text-transform: uppercase;
-    margin-right: 10px;
-    @media #{$phone} {
-      svg {
-        display: none;
-      }
-      @media only screen and (max-width: 460px) {
-        display: block;
+
+    @media only screen and (max-width: 400px) {
+      @include fsz(0px);
+    }
+    .icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+      @media #{$header} {
+        width: 16px;
+        height: 16px;
+        margin-right: 0px;
       }
     }
-  }
-  .header__profile {
-    max-width: 40px;
-    width: 100%;
-    object-fit: cover;
-    margin-right: 30px;
-    @media only screen and (max-width: 810px) {
-      display: none;
+
+    @media #{$tablet} {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
     }
   }
 }
 .header__details {
   max-width: 272px;
   width: 100%;
-  @media only screen and (max-width: 650px) {
-    display: flex;
+  @media #{$header} {
+    width: auto;
   }
-  @media only screen and (max-width: 460px) {
+  @media #{$tablet} {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
   }
   .icon {
     width: 20px;
     height: 20px;
+    fill: $white;
     margin-right: 10px;
-  }
-  @media #{$phone} {
-    width: 70%;
-  }
-  @media only screen and (max-width: 460px) {
-    width: 100%;
+    @media #{$header} {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
 .header__details-phoneNo {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  padding-bottom: 6px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
-  @media #{$phone} {
-    padding-bottom: 0;
-    border: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+  @media #{$tablet} {
+    border-bottom: none;
+    align-items: center;
+    padding-bottom: 0px;
   }
   a {
-    @media only screen and (max-width: 650px) {
-      display: none;
+    font-family: $primary-family;
+    font-weight: 700;
+    @include fsz(16px);
+    line-height: 1.18;
+    color: $white;
+    @media #{$header} {
+      @include fsz(14px);
+    }
+    @media #{$tablet} {
+      @include fsz(0px);
+    }
+    &:hover {
+      color: $alt;
     }
   }
 }
 .header__email {
-  padding-top: 6px;
   display: flex;
   justify-content: flex-end;
-  .icon-icon-email {
-    width: 30px;
-    height: 20px;
-    margin-right: 6px;
-    @media #{$phone} {
-      display: none;
-    }
-    @media only screen and (max-width: 650px) {
-      display: block;
-      width: 20px;
-    }
-  }
-  @media #{$phone} {
-    padding-top: 0;
-  }
+  padding-top: 4px;
   a {
-    @media only screen and (max-width: 650px) {
-      display: none;
+    display: flex;
+    align-items: center;
+    .icon-icon-email {
+      width: 20px;
+      height: 16px;
+      margin-right: 6px;
+      fill: $white;
+
+      @media #{$header} {
+        width: 18px;
+        height: 18px;
+      }
     }
+  }
+  @media #{$tablet} {
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 //main Nav
 .header__mainNav {
-  // padding: 18px 0 17px;
   background-color: $black-dark;
   position: relative;
-  padding: 10px 0;
-  @media #{$header} { 
+  @media #{$header} {
     padding: 0;
   }
-  
+
   > .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media #{$header} { 
+    padding-left: 50px;
+    padding-right: 50px;
+    @media #{$header} {
       flex-direction: column-reverse;
     }
-
-    
   }
-  
 }
 
 .header__navList {
   display: flex;
-  padding: 17px;
-  max-width: 875px;
+  padding: 17px 0px;
+  max-width: 900px;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   @media #{$header} {
-  
     flex-direction: column;
     display: none;
     max-width: 100%;
@@ -225,19 +219,17 @@
 
 .header__menuBar-wrapper {
   @media #{$header} {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .header__navLinks {
   @media #{$header} {
-    
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,25 +241,26 @@
     line-height: 1;
     text-transform: capitalize;
     color: $white;
-    padding-bottom: 10px;
+    padding: 0px 15px 10px;
     &:hover {
-      transition: all 0.1s ease;
-      border-bottom: 2px solid $quarternary-alt;
+      transition: all 0.01s ease;
+      border-bottom: 2px solid $tertiary-alt;
     }
     @media #{$header} {
-      @include fsz(26px);
+      @include fsz(20px);
     }
   }
 }
 
 .header__search {
-  .icon-icon-search {
+  display: flex;
+  flex-direction: row-reverse;
+  .icon-search {
     width: 20px;
     height: 20px;
     fill: $white;
   }
 }
-
 
 .header__navList.open {
   display: flex;
@@ -275,4 +268,21 @@
 
 .header__navList.open .menuBar__container {
   display: none;
+}
+
+#search-button .icon {
+  font-size: 18px;
+}
+
+.header__search-field {
+  display: none;
+  width: 150px;
+  background-color: $white;
+  margin-right: 10px;
+  border-radius: 20px;
+  
+  input {
+    padding: 0 8px;
+   
+  }
 }

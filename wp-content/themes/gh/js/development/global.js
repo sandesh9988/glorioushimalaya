@@ -168,6 +168,17 @@ const reviewsItems = document.querySelectorAll(".reviews__link");
     });
   });
 
+//header search field
 
+const searchItems = document.querySelectorAll(".header__search");
+
+  faqItems.forEach((item) => {
+    const searchBtn = item.querySelector(".header__search-button");
+    const searchInput = item.querySelector(".header__search-field");
+    searchBtn.addEventListener("click", () => {
+      searchInput.style.display =
+      searchInput.style.display === "block" ? "none" : "block";
+    });
+  });
 
 });

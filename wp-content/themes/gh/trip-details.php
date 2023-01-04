@@ -1,23 +1,27 @@
-<?php /* Template Name: Trip Details*/
+<?php /* Template Name: trip details*/
 get_header();
 the_post();
 ?>
 <main class="page__home">
-    <section class="trip-detail">
+    <?php if ( get_field('image')): ?>
+    <section class="trip-detail"
+        style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php the_field('image'); ?>');, #d9d9d9">
         <div class="container">
             <div class="trip-detail__heading">
-                <h1 class="trip-detail__title">Everest Base Camp Trek</h1>
+                <h1 class="trip-detail__title"><?php  the_field('trip-detail-title');?></h1>
             </div>
         </div>
-
     </section>
+    <?php endif; ?>
+
+
     <section class="trip-info">
         <div class="container">
             <div class="trip-info__content">
                 <div class="trip-info__price">
                     <p>15 Days starting from<br><strong>US $1300</strong></p>
                     <div class="trip-info__link">
-                        <a href="#">View dates & prices</a>
+                        <a href="#"><?php  the_field('info-list-link');?>View dates & prices</a>
                     </div>
                 </div>
                 <div class="trip-info__rating">
@@ -2937,14 +2941,18 @@ the_post();
             <div class="reviews__link">
                 <button id="reviewsAccordion">Share your experience and story with the world</button>
                 <div class="reviews__link-form">
-                    <form action="/action_page.php">
+
+                    <form method="POST" onsubmit="return submit_ajax_form(this)">
+                        <?phP 
+                        $nonce = wp_create_nonce("wp_rest");
+                           ?>
                         <div class="reviews__link-field">
                             <label for="fname">Your Full Name:</label>
-                            <input type="text" id="fname" name="fname" value="John Depp">
+                            <input type="text" id="fname" name="fname" value="John Depp" required="">
                         </div>
                         <div class="reviews__link-field">
                             <label for="email">Your Email Address:</label>
-                            <input type="email" id="email" name="email" value="john@gmail.com">
+                            <input type="email" id="email" name="email" value="john@gmail.com" required="">
                         </div>
                         <div class="reviews__link-field">
                             <label for="country">Your Country:</label>
@@ -2974,7 +2982,7 @@ the_post();
                             <label for="text">Review Experience</label>
                             <textarea name="comment" form="usrform"></textarea>
                         </div>
-                        
+
                         <input type="submit" value="Submit" id="submit">
                     </form>
                 </div>

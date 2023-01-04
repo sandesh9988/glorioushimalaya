@@ -24,7 +24,7 @@ get_header() ?>
                         <div class="blog-top">
                             <div class="blog-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
                             <span><?php echo get_the_date() ?></span>
-                        </div>
+                        </div> 
                         <p><?php echo wp_trim_words( get_the_content(), 25, '...' );?> </p>
                     </div>
                 </div>
