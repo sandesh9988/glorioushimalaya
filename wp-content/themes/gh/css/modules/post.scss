@@ -9,34 +9,38 @@
    }
 }
 
-.post__description {
-  width: 83%;
-  .post__title {
-    font-family: $secondary-family;
-    font-weight: 400;
-    @include fsz(68px);
-    line-height: 1;
-    margin-bottom: 40px;
-    @media only screen and (max-width: 1200px) {
-      @include fsz(58px);
-    }
-    
-    @media #{$header} {
-        @include fsz(46px);
-        margin-bottom: 20px;
-      }
-      @media #{$tablet} {
-        @include fsz(36px);
-       
-      }
-      @media #{$phone} {
-        @include fsz(28px);
-        font-weight: 600;
-      }
-      @media only screen and (max-width: 480px) {
-        @include fsz(22px);
-       }
+
+.post__title {
+  width: 100%;
+  font-family: $secondary-family;
+  font-weight: 400;
+  font-style: normal;
+  @include fsz(68px);
+  line-height: 1;
+  margin-bottom: 40px;
+  @media only screen and (max-width: 1200px) {
+    @include fsz(58px);
   }
+  
+  @media #{$header} {
+      @include fsz(46px);
+      margin-bottom: 20px;
+    }
+    @media #{$tablet} {
+      @include fsz(36px);
+     
+    }
+    @media #{$phone} {
+      @include fsz(28px);
+      font-weight: 600;
+    }
+    @media only screen and (max-width: 480px) {
+      @include fsz(22px);
+     }
+}
+.post__description {
+  width: 74%;
+  margin-bottom: 20px;
   @media only screen and (max-width: 1070px) {
     width: 100%;
    }
@@ -46,31 +50,29 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  justify-content: space-between;
+  margin-bottom: 70px;
   @media #{$tablet} {
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
 .post__link-wrapper {
-  width: 63%;
+  width: 61%;
   font-family: $secondary-family;
   font-weight: 400;
   @include fsz(26px);
   line-height: 1.2;
   color: $black;
+  margin-right: 60px;
   @media #{$tablet} {
     width: 100%;
+   
+    margin: 0 auto;
   }
 }
 .post__link-button {
     position: relative;
-  width: 32%;
-  @media #{$tablet} {
-    width: 100%;
     margin-top: 30px;
-  }
   a {
     border-radius: 100px;
     background-color: $tertiary-alt;
@@ -80,7 +82,6 @@
     @include fsz(16px);
     line-height: 1.1;
     color: $white;
-
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 
     &:hover {
@@ -122,7 +123,7 @@
   width: 47%;
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+ 
   @media #{$header} {
     width: 100%;
     flex: 1;
@@ -152,50 +153,74 @@
 
 //post review comments part
 
-.post__review-title {
-  
+.post__review-content {
+  position: relative;
+ 
+}
+
+.post__review-heading {
+  position: relative;
+  max-width: 504px;
   width: 100%;
   display: flex;
   align-items: center;
-  font-family: $primary-family;
-  font-weight: 700;
-  @include fsz(16px);
-  line-height: 1.2;
-  color: $black-dark;
-  margin-bottom: 16px;
-
-  
-  .post__review-line {
-    width: 18%;
-    border: none;
-    border: 1px solid $black;
-    margin-left: 14px;
+  margin-bottom: 30px;
    
-  }
-  .post__review-media {
+  &:before {
+    content: "";
     max-width: 82px;
     width: 100%;
     height: 82px;
-    margin-left: -10px;
-    margin-top: -20px;
-    img {
-      width: 100%;
-      object-fit: cover;
+    top: -42px;
+    bottom: auto;
+    left: auto;
+    right: -70px;
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='82' height='82' viewBox='0 0 82 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.35' d='M60.8014 78.3092C59.5558 78.3092 58.3119 78.0008 57.2016 77.4178L42.64 69.7615L28.0785 77.417C26.9682 78 25.7234 78.3083 24.4787 78.3083C22.8419 78.3083 21.2741 77.7966 19.9424 76.8299C17.5447 75.089 16.3672 72.1936 16.8666 69.2736L19.6497 53.0573L7.86791 41.5748C5.74575 39.5068 4.99709 36.4711 5.91303 33.6528C6.82897 30.8353 9.21927 28.8205 12.15 28.3949L28.4302 26.0292L35.711 11.2766C37.0206 8.62063 39.6765 6.96997 42.64 6.96997C45.6035 6.96997 48.2587 8.62063 49.569 11.2774L56.849 26.0301L73.1293 28.3958C76.0599 28.8213 78.4502 30.8361 79.3662 33.6528C80.2821 36.4711 79.5335 39.5068 77.4113 41.5748L65.6304 53.0573L68.4126 69.2719C68.9128 72.1928 67.7353 75.089 65.3384 76.829C64.0068 77.7975 62.4381 78.3092 60.8014 78.3092Z' fill='black'/%3E%3Cpath d='M59.1614 76.6691C57.9158 76.6691 56.6718 76.3608 55.5616 75.7778L41 68.1215L26.4384 75.777C25.3282 76.36 24.0834 76.6683 22.8386 76.6683C21.2019 76.6683 19.6341 76.1566 18.3024 75.1899C15.9047 73.449 14.7272 70.5536 15.2266 67.6336L18.0097 51.4172L6.2279 39.9348C4.10574 37.8667 3.35708 34.8311 4.27302 32.0128C5.18896 29.1952 7.57926 27.1805 10.5099 26.7549L26.7902 24.3892L34.071 9.6366C35.3805 6.98062 38.0365 5.32996 41 5.32996C43.9635 5.32996 46.6186 6.98062 47.929 9.63742L55.209 24.39L71.4892 26.7557C74.4199 27.1813 76.8102 29.1961 77.7262 32.0128C78.6421 34.8311 77.8934 37.8667 75.7713 39.9348L63.9903 51.4172L66.7726 67.6319C67.2728 70.5527 66.0953 73.449 63.6984 75.189C62.3667 76.1575 60.7981 76.6691 59.1614 76.6691Z' fill='%23F2F2F2'/%3E%3Cpath d='M43.1492 11.9958L51.6699 29.2609L70.7234 32.0293C72.6889 32.3146 73.4737 34.7303 72.0518 36.117L58.2643 49.5568L61.5189 68.5332C61.8543 70.4905 59.8002 71.9838 58.0421 71.0596L42.1152 62.6866C41.4174 62.3192 40.5826 62.3192 39.8848 62.6866L23.958 71.0596C22.1999 71.9838 20.145 70.4914 20.4812 68.5332L23.7357 49.5568L9.94825 36.1178C8.52555 34.7312 9.31111 32.3154 11.2767 32.0301L30.3302 29.2618L38.8508 11.9967C39.7298 10.2148 42.2702 10.2148 43.1492 11.9958Z' fill='%23FDAA34'/%3E%3Cpath d='M35.26 42.64C36.6186 42.64 37.72 41.5386 37.72 40.18C37.72 38.8214 36.6186 37.72 35.26 37.72C33.9014 37.72 32.8 38.8214 32.8 40.18C32.8 41.5386 33.9014 42.64 35.26 42.64Z' fill='%2340396E'/%3E%3Cpath d='M32.8 45.92C33.8643 50.1775 37.3116 53.3 41.41 53.3C45.5083 53.3 48.9556 50.1775 50.02 45.92H32.8Z' fill='%2340396E'/%3E%3Cpath d='M48.79 41.82H45.51C44.8311 41.82 44.28 41.2698 44.28 40.59C44.28 39.9102 44.8311 39.36 45.51 39.36H48.79C49.469 39.36 50.02 39.9102 50.02 40.59C50.02 41.2698 49.469 41.82 48.79 41.82Z' fill='%2340396E'/%3E%3Cpath d='M22.8395 72.5684C22.0916 72.5684 21.3479 72.3339 20.7116 71.8722C19.5865 71.0547 19.0338 69.696 19.2684 68.3249L22.4147 49.9856L9.0897 36.9985C8.0934 36.0276 7.74162 34.6032 8.17212 33.2806C8.6018 31.9587 9.72438 31.0125 11.0995 30.8132L29.5134 28.1375L37.7479 11.4522C38.3629 10.2041 39.6101 9.43005 41 9.43005C42.3899 9.43005 43.6371 10.2041 44.2521 11.4514L52.4866 28.1367L70.9005 30.8124C72.2764 31.0125 73.3982 31.9579 73.8279 33.2798C74.2576 34.6024 73.9066 36.0268 72.9103 36.9976L59.5853 49.9848L62.7316 68.3241C62.9662 69.6943 62.4135 71.0539 61.2884 71.8714C60.1626 72.689 58.7005 72.7939 57.4697 72.1469L41.5428 63.7747C41.2034 63.596 40.7966 63.596 40.4572 63.7747L24.5303 72.1478C23.9948 72.4298 23.4159 72.5684 22.8395 72.5684ZM41 11.8901C40.5457 11.8901 40.1546 12.1328 39.9537 12.5403L31.4331 29.8054C31.2543 30.1687 30.9074 30.4204 30.5073 30.4786L11.4538 33.247C11.0044 33.3126 10.6518 33.6086 10.5124 34.0407C10.3714 34.4729 10.4821 34.9198 10.8068 35.2363L24.5943 48.6753C24.8845 48.9582 25.0166 49.3649 24.9485 49.7642L21.6931 68.7407C21.616 69.1884 21.7899 69.6148 22.1572 69.8821C22.5238 70.1486 22.983 70.1814 23.3848 69.9707L39.3116 61.5976C40.3686 61.0417 41.6306 61.0417 42.6876 61.5976L58.6144 69.9707C59.0162 70.1814 59.4762 70.1494 59.842 69.8821C60.2093 69.6148 60.3832 69.1884 60.3061 68.7407L57.0507 49.7642C56.9826 49.3657 57.1146 48.9582 57.4049 48.6753L71.1924 35.2363C71.5171 34.9198 71.6278 34.472 71.4868 34.0407C71.3466 33.6094 70.994 33.3126 70.5454 33.247L51.4919 30.4786C51.0917 30.4204 50.7449 30.1687 50.5661 29.8054L42.0463 12.5395C41.8454 12.1328 41.4543 11.8901 41 11.8901Z' fill='%2340396E'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 12;
+    @media #{$phone} {
+      top: -12px;
+     right: 0px;
+     max-width: 40px;
+     height: 40px;
     }
+  }
+  .post__review-title {
+    font-family: $primary-family;
+    font-weight: 700;
+    @include fsz(16px);
+    line-height: 1.37;
+    color: $black;
+  }
+  
+  .post__review-line {
+    max-width: 217px;
+    width: 100%;
+    border-top: 1px solid $black-dark;
+    margin-left: 14px;
+    @media #{$phone} {
+      display: none;
+     }
   }
 }
 
 .post__review-comments {
-    width: 50%;
-  margin-left: 80px;
+    width: 56%;
+  padding-left: 75px;
   font-family: $secondary-family;
   font-weight: 400;
   @include fsz(26px);
-  line-height: 1.4;
+  line-height: 1.19;
   color: $black;
+
+  p {
+    margin-bottom: 20px;
+  }
   @media #{$header} {
     width: 100%;
-    margin-left: 20px;
+    padding-left: 20px;
     @include fsz(20px);
     line-height: 1.1;
      }
@@ -210,13 +235,10 @@
     font-weight: 400;
     @include fsz(14px);
     line-height: 1.6;
-    margin-top: 18px;
     display: flex;
-    align-items: center;
     .post__profile-media {
       width: 45px;
       height: 45px;
-      
       margin-right: 8px;
       img {
         width: 100%;
@@ -240,6 +262,7 @@
        @media #{$phone} {
         align-items: center;
         flex-direction: column;
+        margin-bottom: 30px;
         }
 }
 

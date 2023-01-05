@@ -14,6 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" class="stylesheet">
     <link rel=“stylesheet” href=“https://use.typekit.net/ojw1zlp.css”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Included via Site Options -->
     <?php if (get_field('site_header_code') != '') {
@@ -119,10 +122,12 @@
                     <div class="header__search">
 
                         <button id="search-button" class="header__search-button">
-                        <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                            <svg class="icon icon-search">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
                         </button>
-                        <div  class="header__search-field">
-                            <input type="text"  placeholder="Search">
+                        <div class="header__search-field">
+                            <input type="text" placeholder="Search">
                         </div>
                     </div>
 

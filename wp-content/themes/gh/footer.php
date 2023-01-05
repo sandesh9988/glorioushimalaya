@@ -35,7 +35,7 @@
                 <div class="footer__description">
                     <figure class="footer__media">
                         <img class="footer__logo-image"
-                            src="<?php echo get_template_directory_uri(); ?>/uploads/logoAlt.png"
+                            src="<?php echo get_template_directory_uri(); ?>/uploads/footerLogo.svg"
                             alt="Image of a logo" />
                     </figure>
                     <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve been on
@@ -73,10 +73,11 @@
                                 href="mailto:info@glorioushimalaya.com">info@glorioushimalaya.com</a></p>
                     </div>
                     <div class="footer__info-right">
+                    <h4 class="footer__info-title footer__info-title--opacity">United Kingdom</h4>
                         <p><strong>Address:</strong></p>
-                        <p>C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
-                        <p><strong>Phone:</strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
-                        <p><strong>Email:</strong><a href="jason@glorioushimalaya.com">jason@glorioushimalaya.com</a>
+                        <p>1C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
+                        <p><strong>Phone: </strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
+                        <p><strong>Email: </strong><a href="jason@glorioushimalaya.com">jason@glorioushimalaya.com</a>
                         </p>
                     </div>
 
@@ -382,9 +383,15 @@
             </path>
         </symbol>
         <symbol id="icon-search" viewBox="0 0 32 32">
-            <path 
+            <path
                 d="M31.563 27.669l-6.231-6.231c-0.281-0.281-0.662-0.437-1.062-0.437h-1.019c1.725-2.206 2.75-4.981 2.75-8 0-7.181-5.819-13-13-13s-13 5.819-13 13c0 7.181 5.819 13 13 13 3.019 0 5.794-1.025 8-2.75v1.019c0 0.4 0.156 0.781 0.437 1.062l6.231 6.231c0.588 0.588 1.537 0.588 2.119 0l1.769-1.769c0.587-0.588 0.587-1.537 0.006-2.125zM13 21c-4.419 0-8-3.575-8-8 0-4.419 3.575-8 8-8 4.419 0 8 3.575 8 8 0 4.419-3.575 8-8 8z">
             </path>
+        </symbol>
+        <symbol id="icon-LA" viewBox="0 0 20 32">
+            <path d="M16.037 0l-16.037 16 16.037 16 3.963-3.954-12.074-12.046 12.074-12.046-3.963-3.954z"></path>
+        </symbol>
+        <symbol id="icon-RA" viewBox="0 0 20 32">
+            <path d="M3.963 0l-3.963 3.954 12.074 12.046-12.074 12.046 3.963 3.954 16.037-16-16.037-16z"></path>
         </symbol>
     </defs>
 </svg>

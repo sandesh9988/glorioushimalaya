@@ -21,30 +21,29 @@ the_post();
                 <use xlink:href="#icon-icon-right-arrow"></use>
             </svg>
         </div>
-        
+
         <div class="hero__slider">
-        
+
             <figure class="hero__media">
-                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg"
-                    alt="Image of a trekking" />
-            </figure>
-            <figure class="hero__media" >
-                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg" alt="Image of a trekking" />
+                <img src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg" alt="Image of a trekking" />
             </figure>
             <figure class="hero__media">
-                <img  src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg"
-                    alt="Image of a trekking" />
+                <img src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg" alt="Image of a trekking" />
+            </figure>
+            <figure class="hero__media">
+                <img src="<?php echo get_template_directory_uri(); ?>/uploads/heroS.jpg" alt="Image of a trekking" />
             </figure>
         </div>
-       
+
 
 
     </section>
     <section class="post">
 
         <div class="container">
+
+            <h2 class="post__title">Eco-Friendly Trekking in Nepal:<br>Adventures for All Levels and Borders</h2>
             <div class="post__description">
-                <h2 class="post__title">Eco-Friendly Trekking in Nepal:<br>Adventures for All Levels and Borders</h2>
                 <div class="entry-content">
                     <p>We specialize in eco-friendly and down-to-earth adventures, and we are committed to protecting
                         the
@@ -95,28 +94,31 @@ the_post();
 
                 </div>
                 <div class="post__sticky-content">
-                    <figure class="post__sticky-media">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/sticky.jpg"
-                            alt="Image of a trekking" />
-                    </figure>
+                    <a
+                        href="https://www.tripadvisor.com/Attraction_Review-g293890-d10844608-Reviews-Glorious_Himalaya_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Regio.html">
+                        <figure class="post__sticky-media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/sticky.jpg"
+                                alt="Image of a trekking" />
+                        </figure>
+                    </a>
                 </div>
             </div>
             <div class="post__review-content">
-                <div class="post__review-title">
-                    <p>A beautiful Everest Basecamp Trek</p>
+                <div class="post__review-heading">
+                    <h3 class="post__review-title">A beautiful Everest Basecamp Trek</h3>
                     <hr class="post__review-line">
-                    <figure class="post__review-media">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/star.png"
-                            alt="Image of a trekking" />
-                    </figure>
+
 
                 </div>
                 <div class="post__review-comments">
                     <p>I and my girlfriend were looking for a budget-friendly and short EBC trek and we found this
-                        12 days Everest base camp trek with Glorious Himalaya.<br> We wanted to book only EBC trek
+                        12 days Everest base camp trek with Glorious Himalaya.</p>
+                    <p> We wanted to book only EBC trek
                         with a guide, porter, flights and accommodations and they organized it accordingly. We are
-                        very satisfied with their guide and porter service.<br> Thank you for organizing our 12 days
-                        EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.<br>Did
+                        very satisfied with their guide and porter service.</p>
+                    <p>Thank you for organizing our 12 days
+                        EBC trek within a short period. Thanks to Ganesh who respond to our emails shortly.</p>
+                    <p>Did
                         this trek from 4th to 15th December 2022.</p>
                     <div class="post__profile">
                         <figure class="post__profile-media">
@@ -132,7 +134,7 @@ the_post();
         </div>
     </section>
 
-  <!-- dynamic content -->
+    <!-- dynamic content -->
     <section class="grid-content">
         <div class="container">
 
@@ -157,7 +159,7 @@ the_post();
                             <tr class="grid-content__data-row">
                                 <td><strong>10 Days</strong></td>
                                 <td><strong>Easy</strong></td>
-                                <td><strong>$1200</strong>/pp</td>
+                                <td><strong>$1200</strong>/PP</td>
                             </tr>
                         </table>
                         <div class="grid-content__description">
@@ -340,51 +342,75 @@ the_post();
                 <h2 class="fancy__title"><?php echo get_field('travel_styles_title')?></h2>
             </div>
             <div class="fancy__arrow">
-                <svg class="icon icon-icon_arrow-circle-left">
-                    <use xlink:href="#icon-icon_arrow-circle-left"></use>
-                </svg>
-                <svg class="icon icon-icon_arrow-circle-right">
-                    <use xlink:href="#icon-icon_arrow-circle-right"></use>
-                </svg>
+                <div class="fancy__arrow-field ">
+                    <svg class="icon icon-LA">
+                        <use xlink:href="#icon-LA"></use>
+                    </svg>
+                </div>
+                <div class="fancy__arrow-field fancy__arrow-field--right">
+                    <svg class="icon icon-RA">
+                        <use xlink:href="#icon-RA"></use>
+                    </svg>
+                </div>
+
             </div>
             <div class="fancy__slider">
 
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa4.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Nepal Trekking</h3>
-                    </div>
-                </div>
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
-                    </div>
-                </div>
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
-                    </div>
-                </div>
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa1.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Adventure Activities</h3>
-                    </div>
-                </div>
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
-                    </div>
-                </div>
-                <div class="fancy__media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg" alt="Image of a trekking" />
-                    <div class="fancy__content">
-                        <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
-                    </div>
-                </div>
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa4.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Nepal Trekking</h3>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa1.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Adventure Activities</h3>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="fancy__media">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
+                            alt="Image of a trekking" />
+                        <div class="fancy__content">
+                            <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                        </div>
+                    </a>
+                </figure>
             </div>
         </div>
     </section>
@@ -396,103 +422,130 @@ the_post();
             </div>
             <div class="departure__table">
                 <div class="departure__date">
-                    <label for="date">Filter by:</label>
+                    <p>Filter by:</p>
                     <div class="departure__date-box">
-                        <!-- <input type="date" id="year" name="year" placeholder="Year"> -->
-                        <p>Year</p>
-                        <svg class="icon icon-arrow-copy-2">
-                            <use xlink:href="#icon-arrow-copy-2"></use>
-                        </svg>
+
+                        <select name="year" id="year">
+                            <option value="">Year</option>
+                            <?php
+                     $currentYear = date("Y");
+                          for ($i = $currentYear; $i >= $currentYear - 10; $i--) {
+                     echo '<option value="'.$i.'">'.$i.'</option>';
+                             }
+                         ?>
+                        </select>
                     </div>
                     <div class="departure__date-box">
-                        <p>Jan</p><!-- <input type="date" id="month" name="month" placeholder="Jan"> -->
-                        <svg class="icon icon-arrow-copy-2">
-                            <use xlink:href="#icon-arrow-copy-2"></use>
-                        </svg>
+
+                        <select id="month" name="month">
+                            <option value="">Month</option>
+                            <?php
+                               $months = array(
+        "01" => "January",
+      "02" => "February",
+      "03" => "March",
+      "04" => "April",
+      "05" => "May",
+      "06" => "June",
+      "07" => "July",
+      "08" => "August",
+      "09" => "September",
+      "10" => "October",
+      "11" => "November",
+      "12" => "December"
+    );
+    foreach ($months as $monthNumber => $monthName) {
+      echo '<option value="'.$monthNumber.'">'.$monthName.'</option>';
+    }
+  ?>
+                        </select>
                     </div>
+
                 </div>
                 <div class="departure__table-wrapper">
                     <table class="departure__content">
                         <tr class="departure__main-row">
-                            <th>Departing</th>
+                            <th >Departing</th>
                             <th>Trip Name</th>
                             <th>Days</th>
                             <th>Trip Status</th>
                             <th>Price</th>
                             <th colspan="2"></th>
                         </tr>
-                        <tr class="departure__data-row">
-                            <td>19th September, 2016</td>
-                            <td>Manaslu & Tsum Valley Trek</td>
-                            <td>12</td>
-                            <td>Booked</td>
-                            <td>$1,440.00</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
-                        <tr class="departure__data-row">
-                            <td>5th October, 2016</td>
-                            <td>Jiri-Lukla Everest Three Passes Trek</td>
-                            <td>16</td>
-                            <td>Avaliable</td>
-                            <td>Upon Request</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
-                        <tr class="departure__data-row">
-                            <td>7th October, 2016</td>
-                            <td>Langtang triangle trek 17 days</td>
-                            <td>17</td>
-                            <td>Avaliable</td>
-                            <td>$1,440.00</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
-                        <tr class="departure__data-row">
-                            <td>10th October, 2016</td>
-                            <td>Everest Base Camp Trek</td>
-                            <td>13</td>
-                            <td>Avaliable</td>
-                            <td>$1,440.00</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
-                        <tr class="departure__data-row">
-                            <td>27th October, 2016</td>
-                            <td>Manaslu Trek</td>
-                            <td>12</td>
-                            <td>Avaliable</td>
-                            <td>$1,440.00</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
-                        <tr class="departure__data-row">
-                            <td>3rd December, 2016</td>
-                            <td>Annapurna Panorama Trek</td>
-                            <td>8</td>
-                            <td>Avaliable</td>
-                            <td>$1,440.00</td>
-                            <td>
-                                <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
-                                            <use xlink:href="#icon-rArrow"></use>
-                                        </svg></a></div>
-                            </td>
-                        </tr>
+                        <div class="departure__sub-row">
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">19th September, 2016</td>
+                                <td class="departure__list-name">Manaslu & Tsum Valley Trek</td>
+                                <td class="departure__list-days">12</td>
+                                <td class="departure__list-status">Booked</td>
+                                <td class="departure__list-price">$1,440.00</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">5th October, 2016</td>
+                                <td class="departure__list-name">Jiri-Lukla Everest Three Passes Trek</td>
+                                <td class="departure__list-days">16</td>
+                                <td class="departure__list-status">Avaliable</td>
+                                <td class="departure__list-price">Upon Request</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">7th October, 2016</td>
+                                <td class="departure__list-name">Langtang triangle trek 17 days</td>
+                                <td class="departure__list-days">17</td>
+                                <td class="departure__list-status">Avaliable</td>
+                                <td class="departure__list-price">$1,440.00</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">10th October, 2016</td>
+                                <td class="departure__list-name">Everest Base Camp Trek</td>
+                                <td class="departure__list-days">13</td>
+                                <td class="departure__list-status">Avaliable</td>
+                                <td class="departure__list-price">$1,440.00</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">27th October, 2016</td>
+                                <td class="departure__list-name">Manaslu Trek</td>
+                                <td class="departure__list-days">12</td>
+                                <td class="departure__list-status">Avaliable</td>
+                                <td class="departure__list-price">$1,440.00</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                            <tr class="departure__data-row">
+                                <td class="departure__list-item">3rd December, 2016</td>
+                                <td class="departure__list-name">Annapurna Panorama Trek</td>
+                                <td class="departure__list-days">8</td>
+                                <td class="departure__list-status">Avaliable</td>
+                                <td class="departure__list-price">$1,440.00</td>
+                                <td>
+                                    <div class="departure__button"><a href="#">Book Now<svg class="icon icon-rArrow">
+                                                <use xlink:href="#icon-rArrow"></use>
+                                            </svg></a></div>
+                                </td>
+                            </tr>
+                        </div>
                     </table>
                 </div>
                 <div class="departure__subHeading">

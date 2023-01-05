@@ -16,8 +16,8 @@ $(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,
-    nextArrow: ".icon-icon_arrow-circle-left",
-    prevArrow: ".icon-icon_arrow-circle-right",
+    nextArrow: ".icon-LA",
+    prevArrow: ".icon-RA",
     responsive: [
       {
         breakpoint: 1024,
@@ -176,7 +176,6 @@ const searchItems = document.querySelectorAll(".header__search");
     const searchBtn = item.querySelector(".header__search-button");
     const searchInput = item.querySelector(".header__search-field");
     searchBtn.addEventListener("click", () => {
-      searchInput.style.display =
       searchInput.style.display === "block" ? "none" : "block";
     });
   });

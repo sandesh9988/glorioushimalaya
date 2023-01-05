@@ -14,18 +14,24 @@
   line-height: 1.2;
   color: $black;
   margin-bottom: 24px;
+
   .blog__title {
-    font-family: $primary-family;
+    font-family: $secondary-family;
     font-style: normal;
-    font-weight: 800;
-    @include fsz(30px);
-    line-height: 1.1;
-    color: $black-dark;
-    margin-bottom: 10px;
+    font-weight: 400;
+    @include fsz(40px);
+    letter-spacing: 0.16px;
+    line-height: 1;
+    color: $alt-text;
+    margin-bottom: 6px;
+    
     @media #{$tablet} {
-        @include fsz(26px);
+        @include fsz(30px);
        }
   }
+  @media #{$header} {
+    text-align: center;
+      }
   @media #{$tablet} {
     @include fsz(22px);
    }
@@ -39,6 +45,9 @@ justify-content: space-between;
 align-items: baseline;
 @media #{$header} {
    flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   margin-bottom: 30px;
   }
 }
 
@@ -52,10 +61,13 @@ align-items: baseline;
   mix-blend-mode: normal;
   color: rgba(0, 0, 0, 0.75);
   @media #{$header} {
-    max-width: 370px;
-    width: 100%;
-    margin-bottom: 30px;
+    
+    width: 40%;
+   
    }
+   @media #{$phone} {
+   width: 100%;
+      }
    @media only screen and (max-width: 1024px) {
     max-width: 100%;
   }
@@ -74,7 +86,7 @@ align-items: baseline;
     max-width: 370px;
     height: 220px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
     img {
         width: 100%;
@@ -82,4 +94,8 @@ align-items: baseline;
         object-fit: cover ;
         
     }
+    @media #{$phone} {
+      max-width: 100%;
+      height: 300px;
+         }
 }
