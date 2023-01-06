@@ -14,16 +14,17 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
+    
     .breadcrumbs__links {
         position: relative;
       font-family: $primary-family;
       font-weight: 400;
       @include fsz(16px);
-      line-height: 1.5;
+      line-height: 1.27;
       color: $black-dark;
-      text-decoration: underline;
-      margin-right: 5px;
-      padding-bottom: 4px;
+      margin-right: 7px;
+      
+      border-bottom: 2px solid $black-dark;
       &:hover {
         text-decoration: none;
       }
@@ -36,6 +37,9 @@
       @media only screen and (max-width: 450px) {
         @include fsz(10px);
       }
+      &:last-child {
+        border-bottom: none;
+       }
     }
     
     .breadcrumbs__links--alt {
@@ -45,10 +49,12 @@
        }
     }
     .icon {
-        width: 16px;
-        height: 22px; 
+        width: 14px;
+        height: 14px; 
         font-weight: 400;
         fill: $black;
      }
+
+    
   }
 }

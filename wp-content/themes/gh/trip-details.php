@@ -268,13 +268,16 @@ the_post();
                     </div>
                 </div>
             </div>
+
             <div class="trip-overview__map">
                 <div class="trip-overview__map-wrapper">
                     <h2 class="trip-overview__map-title">Route Map</h2>
-                    <figure class="trip-overview__media">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/map.jpg"
-                            alt="Image of a trekking" />
-                    </figure>
+                    <a href="<?php echo get_template_directory_uri(); ?>/uploads/map.jpg">
+                        <figure class="trip-overview__media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/map.jpg"
+                                alt="Image of a trekking" />
+                        </figure>
+                    </a>
                 </div>
                 <a href="#">
                     <div class="trip-overview__link">
@@ -282,6 +285,7 @@ the_post();
                     </div>
                 </a>
             </div>
+
             <div class="trip-overview__mediaList">
                 <ul class="trip-overview__lists">
                     <li><a href="#" target="_blank"><svg class="icon icon-icons8-twitter">
@@ -328,32 +332,32 @@ the_post();
                         <figure class="accordion__media">
                             <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii1.jpg"
                                 alt="Image of a trekking" />
-                            <figcaption>Welcome to Kathmandu, Nepal</figcaption>
+
                         </figure>
                         <div class="accordion__info">
-                            <dl class="trip-info__list">
-                                <div class="accordion__column">
-                                    <div class="trip-info__row trip-info__row--alt">
-                                        <dt><strong>Destination:</strong></dt>
-                                        <dd>Kathmandu</dd>
-                                    </div>
-                                    <div class="trip-info__row trip-info__row--alt">
-                                        <dt><strong>Accommodation:</strong></dt>
-                                        <dd>Luxury Hotel</dd>
 
-                                    </div>
+                            <div class="accordion__column">
+                                <div class="accordion__row">
+                                    <p><strong>Destination:</strong></p>
+                                    <p><strong>Meals Included</strong></p>
                                 </div>
-                                <div class="accordion__column">
-                                    <div class="trip-info__row trip-info__row--alt">
-                                        <dt><strong>Meals Included:</strong></dt>
-                                        <dd>No Meal</dd>
-                                    </div>
-                                    <div class="trip-info__row trip-info__row--alt">
-                                        <dt><strong>Altitude:</strong></dt>
-                                        <dd>1400m</dd>
-                                    </div>
+                                <div class="accordion__row">
+                                    <p>Kathmandu</p>
+                                    <p>No meal</p>
+
                                 </div>
-                            </dl>
+                            </div>
+                            <div class="accordion__column">
+                                <div class="accordion__row">
+                                    <p><strong>Accomodations:</strong></p>
+                                    <p><strong>Altitude:</strong></p>
+                                </div>
+                                <div class="accordion__row">
+                                    <p>Luxury Hotel</p>
+                                    <p>1400m</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="accordion__content-right">
@@ -395,7 +399,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii2.jpg"
                                     alt="Image of a trekking" />
-                                <figcaption>Bouddhanath Stupa</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Today is the day to explore the cultural, religious, and historical sites of
@@ -464,29 +468,28 @@ the_post();
                         </div>
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Kathmandu</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Luxury Hotel</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>No Meal</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>1400m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -517,7 +520,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii3.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Getting ready for Lukla’s flight</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Today is the most exciting day as you are going to begin your real adventure journey
@@ -545,7 +548,7 @@ the_post();
                                 <figure class="accordion__media">
                                     <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii4.jpeg"
                                         alt="Image of a trekking" />
-                                    <figcaption>Tenzing-Hillary Ariport, Lukla ( 2,846m)</figcaption>
+                                    
                                 </figure>
                                 <div class="accordion__content-right accordion__content-right">
                                     <p>After landing at the small Lukla airport, take a short tea break and meet our
@@ -589,29 +592,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Phakding</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>2652m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>Lunch, Dinner</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -638,7 +640,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii5.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Morning view of Namche Bazar</figcaption>
+                                
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>After a good breakfast at Phakding, we set out for the mountain junction town of
@@ -660,29 +662,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Namche Bazaar</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>344m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -709,7 +710,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii6.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>View from Everest View Hotel</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Namche is tucked away between two ridges amidst the giant peaks of the Khumbu and has
@@ -732,29 +733,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Namche Bazaar</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>344m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -781,7 +781,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii7.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Tengboche Monastery</figcaption>
+                                
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>After breakfast in Namche, we start our trek towards Tengboche enjoying the superb
@@ -820,29 +820,28 @@ the_post();
                         </div>
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Tengboche</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>3,860m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -870,7 +869,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii8.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Dingboche, Everest</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Before leaving Tengboche, don’t miss capturing the stunning sunrise view over Ama
@@ -904,29 +903,28 @@ the_post();
                         </div>
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Dingboche</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>4,410m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -953,7 +951,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii9.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Mountain View</figcaption>
+                              
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>This is a day to rest, acclimatize and give our weary bones a breather. However, we
@@ -971,29 +969,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Tengboche</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>4,410m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1020,7 +1017,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii10.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Mountain View</figcaption>
+                                
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>We continue up the wide valley beneath the impressive peaks of Cholatse and Tawache
@@ -1039,29 +1036,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Lobuche</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>4,910m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1089,7 +1085,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii11.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>At the Everest Base Camp (5,364m)</figcaption>
+                                
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Today it’s a long and gritty day. After a hot breakfast at our lodge, we climb
@@ -1112,7 +1108,7 @@ the_post();
                                 <figure class="accordion__media">
                                     <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii12.jpg"
                                         alt="Image of a trekking" />
-                                    <figcaption>Everest Base Camp (5,364m)</figcaption>
+                                   
                                 </figure>
                             </div>
 
@@ -1123,29 +1119,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Phakding</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>2652m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1173,7 +1168,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii13.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Sunrise view of Mt. Everest from Kala Pather</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Early in the morning, we climb to Kalapatthar at (5,545m.) and enjoy a spectacular
@@ -1194,7 +1189,7 @@ the_post();
                                 <figure class="accordion__media">
                                     <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii4.jpeg"
                                         alt="Image of a trekking" />
-                                    <figcaption>Tenzing-Hillary Ariport, Lukla ( 2,846m)</figcaption>
+                                  
                                 </figure>
                                 <div class="accordion__content-right accordion__content-right">
                                     <p>The Himalayan Rescue Association Aid Post is also located here. And foreign
@@ -1214,29 +1209,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Pheriche</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>5,545m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1263,7 +1257,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii15.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Mountain View</figcaption>
+                              
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>We retrace our steps with a Trek back to Namche about 6 hours from Pheriche and do an
@@ -1278,29 +1272,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Namche Bazaar</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>3,440m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1327,7 +1320,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii16.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Monastery in Lukla</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>This is our last day on these lovely mountains that have been home to us all of these
@@ -1338,29 +1331,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Lukla</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Guest House</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Lunch, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>2,800m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1389,7 +1381,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii17.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Thamel, Kathmandu</figcaption>
+                               
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>Most flights from Lukla to Kathmandu are scheduled for early morning to avoid the
@@ -1404,7 +1396,7 @@ the_post();
                                 <figure class="accordion__media">
                                     <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii18.jpeg"
                                         alt="Image of a trekking" />
-                                    <figcaption>Farewell dinner with cultural program in Kathmandu</figcaption>
+                                   
                                 </figure>
                                 <div class="accordion__content-right accordion__content-right">
                                     <p>In the evening we will organize a farewell dinner with Nepalese cuisine and a
@@ -1420,29 +1412,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Destination:</strong></dt>
-                                            <dd>Kathmandu</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Accommodation:</strong></dt>
-                                            <dd>Luxury Hotel</dd>
 
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast, Dinner</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>1,400m</dd>
-                                        </div>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
                                     </div>
-                                </dl>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1469,7 +1460,7 @@ the_post();
                             <figure class="accordion__media">
                                 <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii19.jpeg"
                                     alt="Image of a trekking" />
-                                <figcaption>Felicitation program</figcaption>
+                                
                             </figure>
                             <div class="accordion__content-right accordion__content-right">
                                 <p>After breakfast and our last day in Kathmandu, our vehicle and escorts will be on
@@ -1486,7 +1477,7 @@ the_post();
                                 <figure class="accordion__media">
                                     <img src="<?php echo get_template_directory_uri(); ?>/uploads/ii20.jpeg"
                                         alt="Image of a trekking" />
-                                    <figcaption>Group Farewell at Kathmandu Hotel</figcaption>
+                                    
                                 </figure>
 
                             </div>
@@ -1498,19 +1489,28 @@ the_post();
 
                         <div class="accordion__content-left">
                             <div class="accordion__info">
-                                <dl class="trip-info__list">
 
-                                    <div class="accordion__column">
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Meals Included:</strong></dt>
-                                            <dd>Breakfast</dd>
-                                        </div>
-                                        <div class="trip-info__row trip-info__row--alt">
-                                            <dt><strong>Altitude:</strong></dt>
-                                            <dd>1,400m</dd>
-                                        </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Destination:</strong></p>
+                                        <p><strong>Meals Included</strong></p>
                                     </div>
-                                </dl>
+                                    <div class="accordion__row">
+                                        <p>Kathmandu</p>
+                                        <p>No meal</p>
+
+                                    </div>
+                                </div>
+                                <div class="accordion__column">
+                                    <div class="accordion__row">
+                                        <p><strong>Accomodations:</strong></p>
+                                        <p><strong>Altitude:</strong></p>
+                                    </div>
+                                    <div class="accordion__row">
+                                        <p>Luxury Hotel</p>
+                                        <p>1400m</p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1756,21 +1756,47 @@ the_post();
                 <p>Go with the right number of like-minded travellers</p>
             </div>
             <div class="departure__table--trips">
+            <div class="departure__table">
                 <div class="departure__date">
-                    <label for="date">Filter by:</label>
+                    <p>Filter by:</p>
                     <div class="departure__date-box">
-                        <!-- <input type="date" id="year" name="year" placeholder="Year"> -->
-                        <p>Year</p>
-                        <svg class="icon icon-arrow-copy-2">
-                            <use xlink:href="#icon-arrow-copy-2"></use>
-                        </svg>
+
+                        <select name="year" id="year">
+                            <option value="">Year</option>
+                            <?php
+                     $currentYear = date("Y");
+                          for ($i = $currentYear; $i >= $currentYear - 10; $i--) {
+                     echo '<option value="'.$i.'">'.$i.'</option>';
+                             }
+                         ?>
+                        </select>
                     </div>
                     <div class="departure__date-box">
-                        <p>Jan</p><!-- <input type="date" id="month" name="month" placeholder="Jan"> -->
-                        <svg class="icon icon-arrow-copy-2">
-                            <use xlink:href="#icon-arrow-copy-2"></use>
-                        </svg>
+
+                        <select id="month" name="month">
+                            <option value="">Month</option>
+                            <?php
+                               $months = array(
+        "01" => "January",
+      "02" => "February",
+      "03" => "March",
+      "04" => "April",
+      "05" => "May",
+      "06" => "June",
+      "07" => "July",
+      "08" => "August",
+      "09" => "September",
+      "10" => "October",
+      "11" => "November",
+      "12" => "December"
+    );
+    foreach ($months as $monthNumber => $monthName) {
+      echo '<option value="'.$monthNumber.'">'.$monthName.'</option>';
+    }
+                           ?>
+                        </select>
                     </div>
+
                 </div>
                 <div class="departure__table-wrapper">
                     <table class="departure__content">
@@ -2901,13 +2927,10 @@ the_post();
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="post__review-content">
-                <div class="post__review-title">
-                    <p>A beautiful Everest Basecamp Trek</p>
+            <div class="post__review-heading">
+                    <h3 class="post__review-title">A beautiful Everest Basecamp Trek</h3>
                     <hr class="post__review-line">
-                    <figure class="post__review-media">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/star.png"
-                            alt="Image of a trekking" />
-                    </figure>
+
 
                 </div>
                 <div class="post__review-comments post__review-comments--line">

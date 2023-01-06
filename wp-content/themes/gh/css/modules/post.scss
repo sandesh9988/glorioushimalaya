@@ -181,10 +181,7 @@
     background-size: cover;
     z-index: 12;
     @media #{$phone} {
-      top: -12px;
-     right: 0px;
-     max-width: 40px;
-     height: 40px;
+     display: none;
     }
   }
   .post__review-title {

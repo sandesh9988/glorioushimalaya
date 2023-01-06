@@ -58,8 +58,9 @@
         @include fsz(16px);
         padding: 10px 30px;
       }
-      @media #{$header} {
+      @media #{$tablet} {
         @include fsz(14px);
+        padding: 10px;
        }
       br {
         margin-bottom: 6px;

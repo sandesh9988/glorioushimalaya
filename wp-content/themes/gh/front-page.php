@@ -457,7 +457,7 @@ the_post();
     foreach ($months as $monthNumber => $monthName) {
       echo '<option value="'.$monthNumber.'">'.$monthName.'</option>';
     }
-  ?>
+                           ?>
                         </select>
                     </div>
 
