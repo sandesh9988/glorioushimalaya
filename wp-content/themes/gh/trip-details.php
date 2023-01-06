@@ -27,7 +27,7 @@ the_post();
                 <div class="trip-info__rating">
                     <figure class="trip-info__media">
                         <img class="trip-info__image"
-                            src="<?php echo get_template_directory_uri(); ?>/uploads/startrip.png"
+                            src="<?php echo get_template_directory_uri(); ?>/uploads/startrip.svg"
                             alt="Image of a logo" />
                     </figure>
                     <p>4.5 / 5.0 from 32 Reviews</p>

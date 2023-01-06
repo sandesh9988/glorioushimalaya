@@ -138,7 +138,7 @@ the_post();
     <section class="grid-content">
         <div class="container">
 
-            <h2 class="grid-content__title"><?php echo get_field('selling_trips_title')?></h2>
+            <h2 class="grid-content__title">Our Best Sellers</h2>
             <div class="grid-content-wrapper">
                 <div class="grid-content__row">
                     <figure class="grid-content__media">

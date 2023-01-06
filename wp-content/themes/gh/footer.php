@@ -38,9 +38,12 @@
                             src="<?php echo get_template_directory_uri(); ?>/uploads/footerLogo.svg"
                             alt="Image of a logo" />
                     </figure>
-                    <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve been on
-                        the rugged trails of Nepal’s vast Himalayas for over a decade, and we’ve enjoyed it so much
-                        right to the hilt. We are skilled seasoned outdoor operators.</p>
+                    <div class="footer__description-content">
+                        <p>‘Glorious Himalaya Trekking’’ Pvt. Ltd is a Nepal-based Trekking and Tour operator. We’ve
+                            been on
+                            the rugged trails of Nepal’s vast Himalayas for over a decade, and we’ve enjoyed it so much
+                            right to the hilt. We are skilled seasoned outdoor operators.</p>
+                    </div>
                 </div>
 
             </div>
@@ -73,7 +76,7 @@
                                 href="mailto:info@glorioushimalaya.com">info@glorioushimalaya.com</a></p>
                     </div>
                     <div class="footer__info-right">
-                    <h4 class="footer__info-title footer__info-title--opacity">United Kingdom</h4>
+                        <h4 class="footer__info-title footer__info-title--opacity">United Kingdom</h4>
                         <p><strong>Address:</strong></p>
                         <p>1C Aldeburgh Street,<br>SE10 ORW Greenwich,<br>London</p>
                         <p><strong>Phone: </strong> <a href="tel:+ 44 7473 101106">+ 44 7473 101106</a></p>
@@ -194,11 +197,11 @@
                         alt="Image of a logo" />
                 </figure>
                 <figure class="footer__end-media">
-                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z6.png"
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z7.png"
                         alt="Image of a logo" />
                 </figure>
                 <figure class="footer__end-media">
-                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z7.png"
+                    <img class="footer__end-image" src="<?php echo get_template_directory_uri(); ?>/uploads/z6.png"
                         alt="Image of a logo" />
                 </figure>
             </div>

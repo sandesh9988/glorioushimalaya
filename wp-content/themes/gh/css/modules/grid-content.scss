@@ -39,7 +39,6 @@
 .grid-content__row {
   position: relative;
   width: 30%;
-  
   @media #{$header} {
     width: 40%;
   }
@@ -65,18 +64,7 @@
     max-width: 100%;
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    border-radius: 0px 0px 4px 4px;
-    background-repeat: no-repeat;
-  }
+  
   .grid-content__tag {
     position: absolute;
     max-width: 113px;
@@ -112,11 +100,13 @@
 
 .grid-content__sub-heading {
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
   top: auto;
-  right: auto;
-  left: 12px;
+  right: 0;
+  left: 0px;
   z-index: 12;
+  padding-left: 12px;
+  padding-bottom: 15px;
   .grid-content__subTitle {
     font-family: $primary-family;
     font-weight: 800;
@@ -129,6 +119,22 @@
     @media #{$header} {
       @include fsz(18px);
     }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    right: 0;
+   
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    border-radius: 0px 0px 4px 4px;
+    background-repeat: no-repeat;
   }
 }
 

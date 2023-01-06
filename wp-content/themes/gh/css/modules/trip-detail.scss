@@ -15,7 +15,7 @@
   position: absolute;
   z-index: 23;
   top: auto;
-  bottom: 34px;
+  bottom: 30px;
   right: auto;
   left: 20px;
   margin-top: auto;
@@ -26,7 +26,6 @@
   @include fsz(78px);
   line-height: 1.2;
   color: $white;
-  margin-bottom: 17px;
   @media #{$header} {
     @include fsz(64px);
   }

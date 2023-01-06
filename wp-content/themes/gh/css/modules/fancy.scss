@@ -35,10 +35,12 @@
   margin-right: 11px;
   overflow: hidden;
   border-radius: 20px;
+  
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
     
   }
   &:before {
@@ -63,6 +65,18 @@
 
 
  
+}
+
+.fancy__media img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.fancy__media:hover img {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .fancy__content {
