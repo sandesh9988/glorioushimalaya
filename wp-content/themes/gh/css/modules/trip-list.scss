@@ -1,6 +1,7 @@
 .trip-list {
   padding-bottom: 30px;
   .trip-lists__lists {
+    position: relative;
     list-style-type: none;
      li {
       &:before {
@@ -9,8 +10,8 @@
         right: auto;
         width: 16px;
         height: 16px;
-       margin-top: 4px;
-        left: 45px;
+       margin-top: 2px;
+        left: 0px;
         z-index: 23;
         background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.2 11.52L3.44 7.76L4.56 6.64L7.2 9.28L13.92 2.56C12.4 1.04 10.32 0 8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 6.48 15.6 5.12 14.88 3.92L7.2 11.52Z' fill='%2350B487'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
@@ -19,6 +20,7 @@
   }
 
   .trip-lists__lists--cross {
+    position: relative;
     list-style-type: none;
      li {
       &:before {
@@ -27,8 +29,8 @@
         right: auto;
         width: 16px;
         height: 16px;
-       margin-top: 4px;
-        left: 45px;
+       margin-top: 2px;
+        left: 0px;
         z-index: 23;
         background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 8C0 3.58171 3.58171 0 8 0C12.4183 0 16 3.58171 16 8C16 12.4183 12.4183 16 8 16C3.58171 16 0 12.4183 0 8ZM6.52232 4.90625C6.29889 4.68282 6.00657 4.57143 5.71429 4.57143C5.422 4.57143 5.12968 4.68282 4.90625 4.90625C4.45939 5.35311 4.45939 6.07546 4.90625 6.52232L6.38393 8L4.90625 9.47768C4.45939 9.92454 4.45939 10.6469 4.90625 11.0938C5.12911 11.3166 5.42171 11.4286 5.71429 11.4286C6.00686 11.4286 6.29946 11.3166 6.52232 11.0938L8 9.61607L9.47768 11.0938C9.70054 11.3166 9.99314 11.4286 10.2857 11.4286C10.5783 11.4286 10.8709 11.3166 11.0938 11.0938C11.5406 10.6469 11.5406 9.92454 11.0938 9.47768L9.61607 8L11.0938 6.52232C11.5406 6.07546 11.5406 5.35311 11.0938 4.90625C10.6469 4.45939 9.92454 4.45939 9.47768 4.90625L8 6.38393L6.52232 4.90625Z' fill='%23FF6F56'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
