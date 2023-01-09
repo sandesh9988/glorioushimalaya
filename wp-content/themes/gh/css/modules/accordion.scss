@@ -258,9 +258,15 @@
 .accordion__info {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: row;
   @media #{$tablet} {
     gap: 10px;
+
+   
+  }
+  @media #{$phone} {
+   flex-direction: column;
+    
    
   }
 }
