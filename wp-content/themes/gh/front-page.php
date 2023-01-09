@@ -341,76 +341,97 @@ the_post();
             <div class="fancy__heading">
                 <h2 class="fancy__title"><?php echo get_field('travel_styles_title')?></h2>
             </div>
-            <div class="fancy__arrow">
-                <div class="fancy__arrow-field ">
-                    <svg class="icon icon-LA">
-                        <use xlink:href="#icon-LA"></use>
-                    </svg>
-                </div>
-                <div class="fancy__arrow-field fancy__arrow-field--right">
-                    <svg class="icon icon-RA">
-                        <use xlink:href="#icon-RA"></use>
-                    </svg>
-                </div>
 
+            <div class="fancy__arrow-field fancy__arrow-field--left">
+                <svg class="icon icon-LA">
+                    <use xlink:href="#icon-LA"></use>
+                </svg>
             </div>
+            <div class="fancy__arrow-field fancy__arrow-field--right">
+                <svg class="icon icon-RA">
+                    <use xlink:href="#icon-RA"></use>
+                </svg>
+            </div>
+
+
             <div class="fancy__slider">
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
 
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa4.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Nepal Trekking</h3>
-                        </div>
-                    </a>
-                </figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa4.jpg"
+                                alt="Image of a trekking" />
+                            <div class="fancy__content">
+                                <h3 class="fancy__subtitle">Nepal Trekking</h3>
+                            </div>
 
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
-                        </div>
+                        </figure>
                     </a>
-                </figure>
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
-                        </div>
+                </div>
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
+                                alt="Image of a trekking" />
+                            <div class="fancy__content">
+                                <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                            </div>
+
+                        </figure>
                     </a>
-                </figure>
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa1.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Adventure Activities</h3>
-                        </div>
+                </div>
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
+
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
+                                alt="Image of a trekking" />
+                            <div class="fancy__content">
+                                <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                            </div>
+
+                        </figure>
                     </a>
-                </figure>
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
-                        </div>
+                </div>
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
+
+                            <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa1.jpg"
+                                alt="Image of a trekking" />
+                            <div class="fancy__content">
+                                <h3 class="fancy__subtitle">Adventure Activities</h3>
+                            </div>
+
+                        </figure>
                     </a>
-                </figure>
-                <figure class="fancy__media">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
-                            alt="Image of a trekking" />
-                        <div class="fancy__content">
-                            <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
-                        </div>
+                </div>
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa3.jpg"
+                                    alt="Image of a trekking" />
+                                <div class="fancy__content">
+                                    <h3 class="fancy__subtitle">Nepal Cultural Tours</h3>
+                                </div>
+                            </a>
+                        </figure>
                     </a>
-                </figure>
+                </div>
+                <div class="fancy__slider-list">
+                    <a href="#" class="fancy__media-link">
+                        <figure class="fancy__media">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/uploads/aa2.jpg"
+                                    alt="Image of a trekking" />
+                                <div class="fancy__content">
+                                    <h3 class="fancy__subtitle">Nepal Climbing Peaks</h3>
+                                </div>
+                            </a>
+                        </figure>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -465,7 +486,7 @@ the_post();
                 <div class="departure__table-wrapper">
                     <table class="departure__content">
                         <tr class="departure__main-row">
-                            <th >Departing</th>
+                            <th>Departing</th>
                             <th>Trip Name</th>
                             <th>Days</th>
                             <th>Trip Status</th>

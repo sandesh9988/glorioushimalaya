@@ -100,7 +100,7 @@
         <div class="footer__row-wrapper">
             <div class="footer__row-logo">
                 <figure class="footer__row-media">
-                    <img class="footer__row-image" src="<?php echo get_template_directory_uri(); ?>/uploads/a1.png"
+                    <img class="footer__row-image footer__row-image--primary" src="<?php echo get_template_directory_uri(); ?>/uploads/a1.png"
                         alt="Image of a logo" />
                 </figure>
                 <figure class="footer__row-media">

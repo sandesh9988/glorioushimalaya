@@ -160,8 +160,8 @@ $(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,
-    nextArrow: ".icon-LA",
-    prevArrow: ".icon-RA",
+    nextArrow: ".fancy__arrow-field--left",
+    prevArrow: ".fancy__arrow-field--right",
     responsive: [
       {
         breakpoint: 1024,
