@@ -23,10 +23,6 @@ node_modules
 sitemap.xml
 style.css.map
 user.ini
-apple-touch-icon-precomposed.png
-apple-touch-icon.png
-favicon.ico
-/wp-content/wflogs/*
 
 # wordpress specific
 wp-admin/error_log
@@ -93,16 +89,8 @@ wp-content/mysql.sql
 /wp-includes
 /wp-content/index.php
 /wp-content/themes/twenty*/
-
 /wp-content/themes/index.php
-/wp-content/plugins/
-/wp-content/mu-plugins/*
-
-/vendor
-/composer.lock
-
-# this excludes subfolders in the plugins directory
-/wp-content/plugins/*
+/wp-content/plugins/* 
 
 # large/disallowed file types
 # a CDN should be used for these
